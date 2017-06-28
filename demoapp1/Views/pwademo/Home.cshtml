@@ -1,0 +1,40 @@
+﻿@model demoapp1.Models.configdata
+
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+<h2>Home</h2>
+
+@if (Model != null)
+{
+    <center>
+        <a class="outsideclickhide-source outsideclickhide-source-active" id="outsideclickhide-source-user" data-notloaded="1" href="javascript:void(0);" data-element="user_popupid" title="Welcome,demostudent demo"><img class="profileimage" src="//dlkf6mjgds3hc.cloudfront.net/clouddrive/2017/06/15/t1497541378-9f9a00d397946be66ed2579649b825ca/1497541378.png" alt=""> <i style="padding-left:60px" class="icon-chevron-down"></i></a>
+        <div class="user_popup outsideclickhide" id="user_popupid" style="display: block;">
+            <div style="padding: 20px 0 0 20px;">
+                <img class="roundprofile roundprofile-large" src="//dlkf6mjgds3hc.cloudfront.net/@Model.ClientConfigDataList.UserImagePath" alt="">
+                <h2 class="displayname">@Model.ClientConfigDataList.UserDisplayName</h2>
+                <a href="javascript:void(0);" class="email"> @Model.ClientConfigDataList.UserEmailId </a><br>
+                <span class="schoolname">CL Demo Building1</span>
+
+            </div>
+            <div class="clear"></div>
+            <div class="user_arrow"></div>
+            <div class="modal-footer" style="border-radius: 0;">
+
+                @*<a class="btn change-profile-button" href="javascript:void(0);">Switch Profile</a>
+
+                    <a class="btn setting-button" href="javascript:void(0);">My Profile</a>*@
+                <a class="btn btn-danger logout-button form-control" href="javascript:void(0);">Logged In</a>
+            </div>
+        </div>
+    </center>
+}
+else
+{
+    <h1>
+        Sorry Try Again Latter
+    </h1>
+
+}

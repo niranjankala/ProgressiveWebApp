@@ -1,0 +1,135 @@
+﻿@using demoapp1.Models
+@model Login
+
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <link rel="manifest" href="/manifest.json">
+    <link href="~/Style/login.css" rel="stylesheet" />
+    <title>Index</title>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <link href="~/Style/font.css" rel="stylesheet" />
+    <script type="text/javascript">
+    $(window).load(function() {
+        $(".loader").fadeOut("slow");
+    });
+    </script>
+    <style>
+        body {
+            background-color: #17a1a4;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        input{
+                margin: 1% 1% 1% 14%;
+        }
+
+        .loader {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background: url('../../Images/page-loader.gif') 50% 50% no-repeat rgb(249,249,249);
+            opacity: .8;
+        }
+    </style>
+</head>
+<body>
+
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+    <div class="loader"></div>
+    @using (Html.BeginForm(null, null, FormMethod.Post, new { id = "signupform" }))
+    {
+
+        @Html.AntiForgeryToken()
+        <center>
+            <div class="form-horizontal container text-center ">
+                @*<img src="~/image/sign.JPG" class="img-responsive" />*@
+
+                <img src="~/Images/cl1.png" />
+                <h1 style="color:white">Sign in</h1>
+                <hr />
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="form-group text-center">
+                    @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-5" })
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control", @placeholder = "Name", @id = "txtname" } })
+                        @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-5" })
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control", @placeholder = "Password", @id = "txtpwd" } })
+                        @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Code, htmlAttributes: new { @class = "control-label col-md-5" })
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.Code, new { htmlAttributes = new { @class = "form-control", @placeholder = "Enter School code", @id = "txtcode" } })
+
+                    </div>
+                </div>
+            
+                
+
+                <div>   
+                    
+                </div>
+            </div>
+
+
+
+
+            <input type="hidden" id="hdn1" name="hdn1" />
+
+
+            <input type="hidden" id="hdn2" name="hdn2" />
+           
+            
+
+
+        </center>
+        <br />
+        <div class="container">
+            <div class="row" style="margin-left: 0.2%;">
+                <div class="col-md-4" style="margin-right: -2%;">
+                </div>
+                <div class="col-md-8" style="padding-left: -2%; margin-left: -4%;">
+                    <input type="button" id="btnlogin" value="Sign-In" class="btn btn-default  form-control" sty="">
+                </div>
+            </div>
+            <br />
+            <br />
+            <hr />
+        </div>
+    }
+    
+    <div class="col-md-offset-4  col-md-4" style="padding: 1% 1% 1% 1%;">
+        <section id="socialLoginForm">
+       @* @Html.Partial("_ExternalLoginsListPartial", new ExternalLoginListViewModel { ReturnUrl = ViewBag.ReturnUrl })*@
+            @Html.Partial("~/Views/Account/_ExternalLoginsListPartial.cshtml", new ExternalLoginListViewModel { ReturnUrl = ViewBag.ReturnUrl })
+        </section>
+    </div>
+    <script src="~/ManUp.js"></script>
+
+    <script src="~/js/login.js"></script>
+</body>
+</html>
