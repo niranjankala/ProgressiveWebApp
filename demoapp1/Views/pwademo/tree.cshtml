@@ -13,12 +13,12 @@
     <script src="~/Tree/jquery.treeview.js"></script>
     <link href="~/Tree/screen.css" rel="stylesheet" />
 
-    <link rel="shortcut icon" href="http://www.codestrive.com/wp-content/uploads/2014/01/favicon.ico" type="image/ico" />
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta content="en_US" property="og:locale">
     <meta content="website" property="og:type">
     <meta content="HTML Snippet, CSS Codes, JAVASCRIPT Codes,Java Tutorials, Tips & Tricks, Java Examples - CodeStrive.com" property="og:title">
-    <meta content="http://CodeStrive.com" property="og:url">
+    
     <meta content="CodeStrive.com" property="og:site_name">
 
     <meta name="twitter:card" content="summary">
@@ -28,16 +28,15 @@
 
 
     <!-- stylesheet -->
-    <link rel="stylesheet" media="all" href="http://www.codestrive.com/wp-content/themes/Fizz/style.css" />
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700,800' rel='stylesheet' type='text/css'>
+
+
+    <link href="~/Tree/fizz.css" rel="stylesheet" />
+    <link href="~/Tree/font.css" rel="stylesheet" />
     <script src="~/Tree/lib/jquery.cookie.js"></script>
     <script src="~/Tree/css/jquery-ui.js"></script>
     <script src="//code.jquery.com/jquery-1.9.1.js"></script>
     <link href="~/Tree/jquery.treeview.css" rel="stylesheet" />
     <script src="~/Tree/jquery.treeview.js"></script>
-
-
-    <script src="~/Tree/demoNew.js"></script>
     <link href="~/Content/bootstrap.css" rel="stylesheet" />
     <script src="~/scripts/bootstrap.min.js"></script>
     @*<link href="css/jquery-ui.css" rel="stylesheet" />*@
@@ -53,6 +52,10 @@
         }
     </style>
 
+
+
+ 
+
 </head>
 
 <body>
@@ -60,7 +63,7 @@
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div id="MainContainer">
-            <div id="StudentTree">
+            <div id="StudentTree" style="background-color: white; margin-top: 17%;">
 
             </div>
 
@@ -85,6 +88,48 @@ function closeNav() {
     document.getElementById("main").style.marginLeft= "0";
     document.body.style.backgroundColor = "white";
 }
+    </script>
+
+    <script src="~/Tree/demoNew.js"></script>
+
+
+    <script>
+        $(document).ready(function ()
+        {
+            var items;
+            //var append = '<li> <a class="collapsible-header waves-effect arrow-r"><i class="fa fa-chevron-right"></i>' + items + '<i class="fa fa-angle-down rotate-icon"></i></a>    </li> ';
+            $.ajax({
+
+                url: 'https://betanodeapi.classlink.com/myfiles/services',
+                type: 'GET',
+                dataType: 'json',
+                headers: {
+                    'gwstoken': '@Session["gwstokken"]'
+                },
+                contentType: 'application/x-www-form-urlencoded',
+
+
+                success: function (result) {
+                    //debugger;
+                    //addElementToLi(result);
+                    parentfolders('@Session["gwstokken"]', result);
+                },
+                failure: function (response) {
+                    alert('failure');
+                },
+                error: function (error) {
+
+                    alert('error');
+                    return false;
+                    console.log('error', error);
+
+                }
+            });
+
+
+
+        })
+
     </script>
 </body>
 </html>

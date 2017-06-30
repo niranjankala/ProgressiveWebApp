@@ -253,6 +253,9 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="code\MainSidebar.html" />
+    <Content Include="code\sidebar.js" />
+    <Content Include="code\theme1.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="demoscript\font-awesome.min.css" />
@@ -267,6 +270,8 @@
     <Content Include="Tree\css\normalize.css" />
     <Content Include="Tree\css\style.css" />
     <Content Include="Tree\demoNew.js" />
+    <Content Include="Tree\fizz.css" />
+    <Content Include="Tree\font.css" />
     <Content Include="Tree\images\ajax-loader.gif" />
     <Content Include="Tree\images\file.gif" />
     <Content Include="Tree\images\folder-closed.gif" />
