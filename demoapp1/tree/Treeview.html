@@ -1,0 +1,108 @@
+<!-- <!DOCTYPE html> -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>My Treeview - CSS & JQuery</title>
+	<link href="Style.css" rel="stylesheet" />
+</head>
+<body>
+	<div class="TreeContainer" >
+		<div class="ParentPlace">
+			<span>Root</span>
+		</div>
+		<br><br>
+		<ul class="tree">
+			<li>
+				<span>1</span>
+				<img src="Images/ChildNode.png" />
+				<a> Test 001 </a>
+				<ul>
+					<li>
+						<span>3</span>
+						<img src="Images/ChildNode.png" />
+						<a>Infosys</a>
+						<ul>
+							<li><a>Nagpur</a></li>
+							<li><a>Chennai</a></li>
+							<li>
+								<span>3</span>
+								<img src="Images/ChildNode.png" />
+								<a>Hydarbad</a>
+								<ul>
+									<li><a>Test 007</a></li>
+									<li><a>Test 008</a></li>
+									<li><a>Test 009</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li><a>Test 002</a></li>
+			<li>
+				<span>3</span>
+				<img src="Images/ChildNode.png" />
+				<a>Test 003</a>
+				<ul>
+					<li><a>Test 004</a></li>
+					<li><a>Test 005</a></li>
+					<li>
+						<span>3</span>
+						<img src="Images/ChildNode.png" />
+						<a>Test 006</a>
+						<ul>
+							<li><a>Test 007</a></li>
+							<li><a>Test 008</a></li>
+							<li><a>Test 009</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<span>3</span>
+				<img src="Images/ChildNode.png" />
+
+				<a>Test 0010</a>
+				<ul>
+					<li><a>Test 0070</a></li>
+					<li><a>Test 0080</a></li>
+					<li><a>Test 0090</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+<script src="jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+	function LoadChildren(ctrl) {
+		if ($(ctrl).next('a').next('ul').is(':visible')) {
+			$(ctrl).next('a').next('ul').hide('slow');
+			$(ctrl).attr('src', '/Images/ChildNode.png');
+		}
+		else {
+			$(ctrl).next('a').next('ul').show('slow');
+			$(ctrl).attr('src', 'Images/ChildNode.png');
+		}
+	}
+        
+
+	function NodeSelection(ctrl) {
+		$('ul.tree li').find('a').each(function () { $(this).removeClass(); })
+		$(ctrl).addClass("selected");
+	}
+
+	$(document).ready(function () {
+		$('ul.tree li').each(function () {
+			$(this).children('img').click(function () {
+				LoadChildren(this);
+			});
+		});
+
+		$('ul.tree li a').click(function (e) {
+			$('ul.tree li').find('a').each(function () { $(this).removeClass(); })
+
+			$(this).addClass("selected");
+		});
+	});
+</script>
+</body>
+</html>

@@ -10,118 +10,110 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
     <title>Test</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--[if lt IE 9]>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv-printshiv.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <style>
+        .no-padding{
+  padding:0px;
+}
+.glyphicon-icon-rpad .glyphicon,.glyphicon-icon-rpad .glyphicon.m8,.fa-icon-rpad .fa,.fa-icon-rpad .fa.m8{ padding-right:8px; }
+.glyphicon-icon-lpad .glyphicon,.glyphicon-icon-lpad .glyphicon.m8,.fa-icon-lpad .fa,.fa-icon-lpad .fa.m8{ padding-left:8px; }
+.glyphicon-icon-rpad .glyphicon.m5,.fa-icon-rpad .fa.m5{ padding-right:5px; }
+.glyphicon-icon-lpad .glyphicon.m5,.fa-icon-lpad .fa.m5{ padding-left:5px; }
+.glyphicon-icon-rpad .glyphicon.m12,.fa-icon-rpad .fa.m12{ padding-right:12px; }
+.glyphicon-icon-lpad .glyphicon.m12,.fa-icon-lpad .fa.m12{ padding-left:12px; }
+.glyphicon-icon-rpad .glyphicon.m15,.fa-icon-rpad .fa.m15{ padding-right:15px; }
+.glyphicon-icon-lpad .glyphicon.m15,.fa-icon-lpad .fa.m15{ padding-left:15px; }
+
+
+
+ul.nav-menu-list-style .nav-header .menu-collapsible-icon{position:absolute; right:3px; top:16px; font-size:9px; }
+
+
+
+ul.nav-menu-list-style{
+  margin:0;
+}
+ul.nav-menu-list-style .nav-header{
+  border-top:1px solid #FFFFFF;
+  border-bottom:1px solid #e8e8e8;
+  display:block;
+  margin:0;
+  line-height:42px;
+  padding:0 8px;
+  font-weight:600;
+}
+ul.nav-menu-list-style> li{
+  position:relative; }
+ul.nav-menu-list-style> li a{
+  border-top:1px solid #FFFFFF;
+  border-bottom:1px solid #e8e8e8;
+  padding:0 10px;
+  line-height:32px;
+}
+ul.nav-menu-list-style> li:first-child a{
+}
+
+
+ul.nav-menu-list-style{list-style:none; padding:0px; margin:0px;}
+ul.nav-menu-list-style li .badge,ul.nav-menu-list-style li .pull-right,ul.nav-menu-list-style li span.badge,ul.nav-menu-list-style li label.badge{float:right; margin-top:7px;}
+ul.bullets{list-style:inside disc}
+ul.numerics{list-style:inside decimal}
+.ul.kas-icon-aero{}
+ul.kas-icon-aero li a:before{font-family: 'Glyphicons Halflings'; font-size:9px; content: "\e258"; padding-right:8px; }
+
+
+    </style>
 
 </head>
 <body>
 
     <div class="container">
-        <!-- Static navbar -->
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">BootSideMenu</a>
-                </div>
-                <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="index.html"><span class="fa fa-home"></span> Home</a></li>
-                        <li><a href="https://github.com/AndreaLombardo/BootSideMenu/tree/master/examples"><span class="fa fa-code"></span> Examples</a></li>
-                        <li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DUNFGKA32BFGE"><span class="fa fa-paypal"></span> Donation</a></li>
-                        <li><a href="https://twitter.com/AndreaL0mbardo" target="_blank"><span class="fa fa-twitter"></span> Twitter</a></li>
-                        <li><a href="https://github.com/AndreaLombardo/" target="_blank"><span class="fa fa-github"></span> Github</a></li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                More <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="https://github.com/AndreaLombardo/BootSideMenu/">Github</a></li>
-                                <li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DUNFGKA32BFGE">Donation</a></li>
-                                <li><a href="http://www.lombardoandrea.com">My Site</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <div class="jumbotron">
-            <h1>BootSideMenu</h1>
-            <p>A jQuery plugin to easily create a sliding menu, working on a Bootstrap based application.</p>
-            <p>
-                <a class="btn btn-lg btn-warning" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DUNFGKA32BFGE" role="button">
-                    <span class="fa fa-paypal"></span> Thanks
-                </a>
-            </p>
-        </div>
         <div class="row">
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading"><span class="fa fa-share-alt"></span> Share your experience</div>
-                    <div class="panel-body">
-                        <p class="lead">
-                            Those who send me the link of the website in which you will use this plugin, will be mentioned in the <u>future</u> section "<a href="#">
-                                Used
-                                by
-                            </a>"
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading"><span class="fa fa-list"></span> Examples</div>
-                    <div class="panel-body">
-                        <p class="lead">All examples uses <a href="examples/0-menu-template.html">this</a> template for the HTML code.</p>
-                        <p>Watch some examples!</p>
-                    </div>
-                    <ul class="list-group">
-                        <a href="examples/1-simple-left.html" class="list-group-item">Simple left</a>
-                        <a href="examples/2-simple-right.html" class="list-group-item">Simple right</a>
-                        <a href="examples/3-duration.html" class="list-group-item">Define duration</a>
-                        <a href="examples/4-width.html" class="list-group-item">Custom width</a>
-                        <a href="examples/5-close-on-click.html" class="list-group-item">Don't close on click</a>
-                        <a href="examples/6-events.html" class="list-group-item">Events</a>
-                        <a href="examples/7-on-toggler-click.html" class="list-group-item">On Arrow Click</a>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading"><span class="fa fa-paypal"></span> A courtesy coffee?</div>
-                    <div class="panel-body">
-                        <p class="lead">If you appreciate my work, and you are kind to offer a coffee, I will be very satisfied.</p>
-                        <p class="text-center">
-                            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DUNFGKA32BFGE" target="_blank">
-                                <img src="img/paypal_coffee.png"
-                                     style="border: 0">
-                            </a>
-                        </p>
-                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="text-center">
-                            <input type="hidden" name="cmd" value="_s-xclick">
-                            <input type="hidden" name="hosted_button_id" value="DUNFGKA32BFGE">
-                            <input type="image" src="https://www.paypalobjects.com/en_US/IT/i/btn/btn_donateCC_LG.gif" border="0" name="submit"
-                                   alt="PayPal è il metodo rapido e sicuro per pagare e farsi pagare online.">
-                            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-                        </form>
+            <h1>Bootstrap Tree Menu Example</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="well no-padding">
+                    <div>
+                        <ul class="nav nav-list nav-menu-list-style">
+                            <li>
+                                <label class="tree-toggle nav-header glyphicon-icon-rpad">
+                                    <span class="glyphicon glyphicon-folder-close m5"></span>
+                                    Class Link
+                                    <span class="menu-collapsible-icon glyphicon glyphicon-chevron-down"></span>
+                                </label>
+                                <ul class="nav nav-list tree bullets" id="parent_class" style="display: block;">
+
+                                    <li> <label class="tree-toggle nav-header">Buttons </label> <ul class="nav nav-list tree bullets"><li><label class="tree-toggle nav-header">ButtonsColors</label><ul class="nav nav-list tree"><li><a href="#">Horizontal</a></li><li><a href="#">Vertical</a></li></ul></li></ul> </li>
+                                </ul>
+                            </li>
+                            <li class="divider"></li>
+
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        $('.tree-toggle').click(function () {
+            $(this).parent().children('ul.tree').toggle(200);
+        });
+        $(function () {
+            $('.tree-toggle').parent().children('ul.tree').toggle(200);
+        })
+        $(document).ready(function () {
+            var html = '<li> <label class="tree-toggle nav-header">Buttons </label> <ul class="nav nav-list tree bullets"><li><label class="tree-toggle nav-header">ButtonsColors</label><ul class="nav nav-list tree"><li><a href="#">Horizontal</a></li><li><a href="#">Vertical</a></li></ul></li></ul> </li> </ul> </li>';
+            $('#parent_class').append(html);
+        });
+
+    </script>
 </body>
 </html>
