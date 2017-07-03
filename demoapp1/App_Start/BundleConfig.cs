@@ -26,6 +26,12 @@ namespace demoapp1
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+            //For myfiles layout
+            bundles.Add(new StyleBundle("~/Content/myfilescss").Include(
+                      "~/Content/bootstrap.css",
+                      "~/Content/site.css"));
+
+
         }
     }
 }

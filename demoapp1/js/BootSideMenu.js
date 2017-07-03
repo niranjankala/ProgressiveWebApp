@@ -5,8 +5,9 @@
  * https://github.com/AndreaLombardo/BootSideMenu
  * */
 (function ($) {
-
+  
     $.fn.BootSideMenu = function (userOptions) {
+      
 
         var initialCode;
         var newCode;
@@ -23,28 +24,34 @@
             closeOnClick: true,
             width: "15%",
             onTogglerClick: function () {
+              
                 //code to be executed when the toggler arrow was clicked
             },
             onBeforeOpen: function () {
+              
                 //code to be executed before menu open
             },
             onBeforeClose: function () {
+              
                 //code to be executed before menu close
             },
             onOpen: function () {
+              
                 //code to be executed after menu open
             },
             onClose: function () {
+              
                 //code to be executed after menu close
             },
             onStartup: function () {
+              
                 //code to be executed when the plugin is called
             }
         };
 
         var options = $.extend({}, defaults, userOptions);
 
-
+        //debugger;
         body.originalMarginLeft = $("body").css("margin-left");
         body.originalMarginRight = $("body").css("margin-right");
         body.width = $("body").width();
@@ -118,10 +125,23 @@
 
         menu.off("click", ".list-group-item");
         menu.on("click", ".list-group-item", function () {
+           
+            // call ajax 
+      
+
+
             menu.find(".list-group-item").each(function () {
                 $(this).removeClass("active");
+                
+
+              //  childfolders();
             });
             $(this).addClass("active");
+          
+            var id = this.id;
+            if (!isNaN(id)) {
+                childfolders(id);
+            }
             $(".glyphicon", this).toggleClass("glyphicon-chevron-right").toggleClass("glyphicon-chevron-down");
         });
 

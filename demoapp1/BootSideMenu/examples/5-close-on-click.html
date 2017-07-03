@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Set width</title>
+    <title>Close on click</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -38,24 +38,25 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">BootSideMenu</a>
+                <a class="navbar-brand" href="#">My Drive</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="../index.html"><span class="fa fa-home"></span> Home</a></li>
-                    <li><a href="https://github.com/AndreaLombardo/BootSideMenu/tree/master/examples"><span class="fa fa-code"></span> Examples</a></li>
-                    <li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DUNFGKA32BFGE"><span class="fa fa-paypal"></span> Donation</a></li>
-                    <li><a href="https://twitter.com/AndreaL0mbardo" target="_blank"><span class="fa fa-twitter"></span> Twitter</a></li>
-                    <li><a href="https://github.com/AndreaLombardo/" target="_blank"><span class="fa fa-github"></span> Github</a></li>
+                    <li class="active"><a href="#"><span class="fa fa-home"></span> Home</a></li>
+                    <li><a href="#"><span class="fa fa-code"></span> Examples</a></li>
+                    <li><a href="#"><span class="fa fa-paypal"></span> Donation</a></li>
+                    <li><a href="#" target="_blank"><span class="fa fa-twitter"></span> Twitter</a></li>
+                    <li><a href="#" target="_blank"><span class="fa fa-github"></span> Github</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
+
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More <span
                                 class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="https://github.com/AndreaLombardo/BootSideMenu/">Github</a></li>
-                            <li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DUNFGKA32BFGE">Donation</a></li>
-                            <li><a href="http://www.lombardoandrea.com">My Site</a></li>
+                            <li><a href="#">Github</a></li>
+                            <li><a href="#">Donation</a></li>
+                            <li><a href="#">My Site</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -69,7 +70,7 @@
         <p>A jQuery plugin to easily create a sliding menu, working on a Bootstrap based application.</p>
 
         <p>
-            <a class="btn btn-lg btn-warning" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DUNFGKA32BFGE" role="button"><span
+            <a class="btn btn-lg btn-warning" href="#" role="button"><span
                     class="fa fa-paypal"></span> Thanks</a>
         </p>
     </div>
@@ -77,27 +78,44 @@
     <div class="row">
         <div class="col-md-8">
             <div class="panel panel-default">
-                <div class="panel-heading"><span class="fa fa-jsfiddle"></span> How to</div>
-                <div class="panel-body">
+                <div class="panel-heading"><span class="fa fa-jsfiddle">
+                    </span> <!--How to--></div>
+                <!--<div class="panel-body">
                     <p class="lead">The menu will appear on the left.</p>
                 <pre>$(document).ready(function () {
     $('#test').BootSideMenu({
         side: "left",
-        pushBody:false,
-        width: '360px'
+        closeOnClick: false
     });
 });</pre>
-                    <p class="lead"> By default when you click a menu's item it will close automatically. To change this feature use the option:</p>
-                    <pre>closeOnClick:false</pre>
-                    <p>Watch this changes in the <a href="5-close-on-click.html">next example</a>.</p>
-                </div>
+                    <p class="lead">There are some interesting events you can use with your menu</p>
+        <pre>onTogglerClick: function () {
+    //code to be executed when the toggler arrow was clicked
+},
+onBeforeOpen: function () {
+    //code to be executed before menu open
+},
+onBeforeClose: function () {
+    //code to be executed before menu close
+},
+onOpen: function () {
+    //code to be executed after menu open
+},
+onClose: function () {
+    //code to be executed after menu close
+},
+onStartup: function () {
+    //code to be executed when the plugin is called
+}</pre>
+                    <p>See these in action in the <a href="6-events.html">next example</a>.</p>
+                </div>-->
             </div>
         </div>
 
         <div class="col-md-4">
             <div class="panel panel-default">
                 <div class="panel-heading"><span class="fa fa-paypal"></span> A courtesy coffee?</div>
-                <div class="panel-body">
+                <!--<div class="panel-body">
                     <p class="lead">If you appreciate my work, and you are kind to offer a coffee, I will be very satisfied.</p>
 
                     <p class="text-center">
@@ -111,7 +129,7 @@
                                alt="PayPal è il metodo rapido e sicuro per pagare e farsi pagare online.">
                         <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
                     </form>
-                </div>
+                </div>-->
             </div>
         </div>
 
@@ -119,7 +137,7 @@
 </div>
 
 <!--Test -->
-<div id="test">
+<!--<div id="test">
     <div class="user">
         <img src="../img/avatar.png" alt="Esempio" class="img-thumbnail"><br>
         <a href="http://www.lombardoandrea.com" target="_blank" class="navbar-link">Andrea Lombardo</a>
@@ -175,21 +193,94 @@
 
     </div>
 
-</div>
+</div>-->
 <!--/Test -->
+    <div id="test">
+        <div class="user">
+            <img src="../img/avatar.png" alt="Esempio" class="img-thumbnail"><br>
+            <a href="#" class="navbar-link"><b>My Drive</b></a>
+        </div>
 
-<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="../js/BootSideMenu.js"></script>
+        <div class="list-group" id="parentappend">
 
-<script type="text/javascript">
+
+        </div>
+        </div>
+
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../js/BootSideMenu.js"></script>
+    <script src="../../js/JavaScript.js"></script>
+        <script>
+            $('#parentappend').empty();
+            var append = '<a href="#classlink_parent_child" class="list-group-item" data-toggle="collapse" id="classlink_parent">Class Link</a> </div> <div class="list-group collapse" id="classlink_parent_child"> </div>';
+            
+            $('#parentappend').append(append);
+         $(document).ready(function () {
+             
+             var items;
+             //var append = '<li> <a class="collapsible-header waves-effect arrow-r"><i class="fa fa-chevron-right"></i>' + items + '<i class="fa fa-angle-down rotate-icon"></i></a>    </li> ';
+             $.ajax({
+
+                 url: 'https://betanodeapi.classlink.com/myfiles/services',
+                 type: 'GET',
+                 dataType: 'json',
+                 headers: {
+                     'gwstoken': localStorage.demo
+                 },
+                 contentType: 'application/x-www-form-urlencoded',
+
+
+                 success: function (result) {
+               
+                     addElementToLi(result);
+                     parentfolders(localStorage.demo);
+                 },
+                 failure: function (response) {
+                     alert('failure');
+                 },
+                 error: function (error) {
+
+                     alert('error');
+                     return false;
+                     console.log('error', error);
+
+                 }
+             });
+
+           
+
+             //CALL AJAX AS REQURIED 
+
+
+       // var body = ' <a href="#classlink" class="list-group-item" data-toggle="collapse">Class Link</a> <div class="list-group collapse" id="classlink"> <a href="#" class="list-group-item">Item 1 di 1</a> <a href="#" class="list-group-item">Item 2 di 1</a></div>';
+
+      //  $('#parentappend').append(body);
+        event.stopPropagation();
+         });
+         $('#test-left').BootSideMenu({
+             side: "left",
+             onBeforeOpen: function () {
+                 alert('Menu will open soon');
+             },
+             onBeforeClose: function () {
+                 alert('Menu will close soon');
+             }
+         });
+
+
+        
+    </script>
+
+
+    <script type="text/javascript">
     $(document).ready(function () {
         $('#test').BootSideMenu({
             side: "left",
-            pushBody:false,
-            width: '360px'
+            closeOnClick: false
         });
     });
-</script>
+    </script>
 </body>
 </html>

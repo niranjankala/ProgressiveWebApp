@@ -128,6 +128,9 @@
             @Html.Partial("~/Views/Account/_ExternalLoginsListPartial.cshtml", new ExternalLoginListViewModel { ReturnUrl = ViewBag.ReturnUrl })
         </section>
     </div>
+    <script>
+        localStorage.demo = '@Session["gwstokken"]';
+    </script>
     <script src="~/ManUp.js"></script>
 
     <script src="~/js/login.js"></script>
