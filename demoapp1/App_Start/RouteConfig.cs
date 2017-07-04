@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace demoapp1
+namespace Classlink.Dashboard.Web
 {
     public class RouteConfig
     {
