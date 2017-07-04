@@ -327,6 +327,7 @@
     <Content Include="Content\BootSideMenu\package.json" />
     <Content Include="Content\BootSideMenu\README.md" />
     <None Include="Properties\PublishProfiles\rahul.pubxml" />
+    <None Include="Properties\PublishProfiles\rahulpwa.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

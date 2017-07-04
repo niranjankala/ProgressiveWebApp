@@ -1,4 +1,4 @@
-﻿/// <reference path="c:\users\rahuldubey\documents\visual studio 2015\Projects\demoapp1\scripts/jquery-1.10.2.min.js" />
+﻿/// <reference path="c:\users\rahuldubey\documents\visual studio 2015\Projects\Classlink.Dashboard.Web\scripts/jquery-1.10.2.min.js" />
 
 
 var app = [
