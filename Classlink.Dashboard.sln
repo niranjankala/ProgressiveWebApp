@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26430.13
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classlink.Dashboard.Web", "demoapp1\Classlink.Dashboard.Web.csproj", "{14C5A013-FB8C-4AC7-98D9-9C3CE1B85F24}"
+EndProject
+Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "Classlink.Dashboard.PWA", "Classlink.Dashboard.PWA\Classlink.Dashboard.PWA.jsproj", "{E2606CAA-E424-4BC7-A73A-36D635FFA0CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,30 @@ Global
 		{14C5A013-FB8C-4AC7-98D9-9C3CE1B85F24}.Release|x64.Build.0 = Release|Any CPU
 		{14C5A013-FB8C-4AC7-98D9-9C3CE1B85F24}.Release|x86.ActiveCfg = Release|Any CPU
 		{14C5A013-FB8C-4AC7-98D9-9C3CE1B85F24}.Release|x86.Build.0 = Release|Any CPU
+		{E2606CAA-E424-4BC7-A73A-36D635FFA0CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2606CAA-E424-4BC7-A73A-36D635FFA0CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2606CAA-E424-4BC7-A73A-36D635FFA0CA}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E2606CAA-E424-4BC7-A73A-36D635FFA0CA}.Debug|ARM.ActiveCfg = Debug|ARM
+		{E2606CAA-E424-4BC7-A73A-36D635FFA0CA}.Debug|ARM.Build.0 = Debug|ARM
+		{E2606CAA-E424-4BC7-A73A-36D635FFA0CA}.Debug|ARM.Deploy.0 = Debug|ARM
+		{E2606CAA-E424-4BC7-A73A-36D635FFA0CA}.Debug|x64.ActiveCfg = Debug|x64
+		{E2606CAA-E424-4BC7-A73A-36D635FFA0CA}.Debug|x64.Build.0 = Debug|x64
+		{E2606CAA-E424-4BC7-A73A-36D635FFA0CA}.Debug|x64.Deploy.0 = Debug|x64
+		{E2606CAA-E424-4BC7-A73A-36D635FFA0CA}.Debug|x86.ActiveCfg = Debug|x86
+		{E2606CAA-E424-4BC7-A73A-36D635FFA0CA}.Debug|x86.Build.0 = Debug|x86
+		{E2606CAA-E424-4BC7-A73A-36D635FFA0CA}.Debug|x86.Deploy.0 = Debug|x86
+		{E2606CAA-E424-4BC7-A73A-36D635FFA0CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2606CAA-E424-4BC7-A73A-36D635FFA0CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2606CAA-E424-4BC7-A73A-36D635FFA0CA}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{E2606CAA-E424-4BC7-A73A-36D635FFA0CA}.Release|ARM.ActiveCfg = Release|ARM
+		{E2606CAA-E424-4BC7-A73A-36D635FFA0CA}.Release|ARM.Build.0 = Release|ARM
+		{E2606CAA-E424-4BC7-A73A-36D635FFA0CA}.Release|ARM.Deploy.0 = Release|ARM
+		{E2606CAA-E424-4BC7-A73A-36D635FFA0CA}.Release|x64.ActiveCfg = Release|x64
+		{E2606CAA-E424-4BC7-A73A-36D635FFA0CA}.Release|x64.Build.0 = Release|x64
+		{E2606CAA-E424-4BC7-A73A-36D635FFA0CA}.Release|x64.Deploy.0 = Release|x64
+		{E2606CAA-E424-4BC7-A73A-36D635FFA0CA}.Release|x86.ActiveCfg = Release|x86
+		{E2606CAA-E424-4BC7-A73A-36D635FFA0CA}.Release|x86.Build.0 = Release|x86
+		{E2606CAA-E424-4BC7-A73A-36D635FFA0CA}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
