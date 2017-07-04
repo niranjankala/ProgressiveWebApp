@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 using System.Web.Mvc;
 
 
-namespace demoapp1.App_Start
+namespace Classlink.Dashboard.Web.App_Start
 {
     class Program
     {

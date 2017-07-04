@@ -1,0 +1,3 @@
+D:\DevWorkSpaces\Projects\ProgressWebApp\demoapp1\obj\Debug\Classlink.Dashboard.Web.csprojResolveAssemblyReference.cache
+D:\DevWorkSpaces\Projects\ProgressWebApp\demoapp1\obj\Debug\demoapp1.dll
+D:\DevWorkSpaces\Projects\ProgressWebApp\demoapp1\obj\Debug\demoapp1.pdb

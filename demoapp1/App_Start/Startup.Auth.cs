@@ -5,9 +5,9 @@ using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Owin;
-using demoapp1.Models;
+using Classlink.Dashboard.Web.Models;
 
-namespace demoapp1
+namespace Classlink.Dashboard.Web
 {
     public partial class Startup
     {

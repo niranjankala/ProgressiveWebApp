@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.ComponentModel.DataAnnotations;
 
-namespace demoapp1.Models
+namespace Classlink.Dashboard.Web.Models
 {
     public class Login
     {

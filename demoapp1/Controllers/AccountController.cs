@@ -8,10 +8,10 @@ using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
-using demoapp1.Models;
+using Classlink.Dashboard.Web.Models;
 using Newtonsoft.Json;
 
-namespace demoapp1.Controllers
+namespace Classlink.Dashboard.Web.Controllers
 {
     [Authorize]
     public class AccountController : Controller

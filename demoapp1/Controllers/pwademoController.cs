@@ -6,10 +6,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
-using demoapp1.Models;
+using Classlink.Dashboard.Web.Models;
 using System.Web.Script.Serialization;
 
-namespace demoapp1.Controllers
+namespace Classlink.Dashboard.Web.Controllers
 {
     [RequireHttps]
     public class pwademoController : Controller
