@@ -119,7 +119,14 @@ namespace Classlink.Dashboard.Web.Controllers
 
         public ActionResult TESTFILE()
         {
-            return View();
+            if (Session["Data"] == null)
+            {
+                return Redirect("~/pwademo/Index");
+            }
+            else
+            {
+                return View();
+            }
         }
 
     }
