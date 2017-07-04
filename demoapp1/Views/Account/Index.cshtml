@@ -30,9 +30,8 @@
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
 
-        input{
-             align-items:center;
-                margin: 1% 1% 1% 14%;
+        input {
+            margin: 1% 1% 1% 14%;
         }
 
         .loader {
@@ -57,63 +56,57 @@
     {
 
         @Html.AntiForgeryToken()
-      
-            <div class="container">
+        <center>
+            <div class="form-horizontal container text-center ">
                 @*<img src="~/image/sign.JPG" class="img-responsive" />*@
-                <div class="text-center">
-                    <img src="~/Images/cl1.png" />
-                    <h1 style="color:white">Sign in</h1>
-                </div>
+
+                <img src="~/Images/cl1.png" />
+                <h1 style="color:white">Sign in</h1>
                 <hr />
                 @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-                <div class="row">
+                <div class="form-group text-center">
+                    @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-5" })
                     <div class="col-md-4">
-                        @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label" })
-                    </div>
-                    <div class="col-md-8">
                         @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control", @placeholder = "Name", @id = "txtname" } })
-                       
+                        @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
                     </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-5" })
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control", @placeholder = "Password", @id = "txtpwd" ,@type="password"} })
+                        @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
                     </div>
+                </div>
 
-                    <div class="row">
-                        <div class="col-md-4">
-                            @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label " })
-                        </div>
-                        <div class="col-md-8">
-                            @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control", @placeholder = "Password", @id = "txtpwd" } })
-                            @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            @Html.LabelFor(model => model.Code, htmlAttributes: new { @class = "control-label " })
-                        </div>
-                        <div class="col-md-8">
-                            @Html.EditorFor(model => model.Code, new { htmlAttributes = new { @class = "form-control", @placeholder = "Enter School code", @id = "txtcode" } })
-
-                        </div>
-                    </div>
-
-
-
-                    <div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Code, htmlAttributes: new { @class = "control-label col-md-5" })
+                    <div class="col-md-4">
+                        @Html.EditorFor(model => model.Code, new { htmlAttributes = new { @class = "form-control", @placeholder = "Enter School code", @id = "txtcode" } })
 
                     </div>
                 </div>
 
 
 
+                <div>
 
-                <input type="hidden" id="hdn1" name="hdn1" />
-
-
-
-
+                </div>
+            </div>
 
 
 
 
+            <input type="hidden" id="hdn1" name="hdn1" />
+
+
+            <input type="hidden" id="hdn2" name="hdn2" />
+
+
+
+
+        </center>
         <br />
         <div class="container">
             <div class="row" style="margin-left: 0.2%;">
@@ -128,13 +121,16 @@
             <hr />
         </div>
     }
-    
+
     <div class="col-md-offset-4  col-md-4" style="padding: 1% 1% 1% 1%;">
         <section id="socialLoginForm">
-       @* @Html.Partial("_ExternalLoginsListPartial", new ExternalLoginListViewModel { ReturnUrl = ViewBag.ReturnUrl })*@
+            @* @Html.Partial("_ExternalLoginsListPartial", new ExternalLoginListViewModel { ReturnUrl = ViewBag.ReturnUrl })*@
             @Html.Partial("~/Views/Account/_ExternalLoginsListPartial.cshtml", new ExternalLoginListViewModel { ReturnUrl = ViewBag.ReturnUrl })
         </section>
     </div>
+    <script>
+        localStorage.demo = '@Session["gwstokken"]';
+    </script>
     <script src="~/ManUp.js"></script>
 
     <script src="~/js/login.js"></script>

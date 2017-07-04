@@ -1,0 +1,16 @@
+E:\DevWorkspaces\Projects\ProgressiveWebApp\Classlink.Dashboard.PWA\bin\Debug\ReverseMap\resources.pri
+E:\DevWorkspaces\Projects\ProgressiveWebApp\Classlink.Dashboard.PWA\bin\Debug\AppxManifest.xml
+E:\DevWorkspaces\Projects\ProgressiveWebApp\Classlink.Dashboard.PWA\bin\Debug\Classlink.Dashboard.PWA.build.appxrecipe
+E:\DevWorkspaces\Projects\ProgressiveWebApp\Classlink.Dashboard.PWA\bld\Debug\ResourceHandlingTask.state
+E:\DevWorkspaces\Projects\ProgressiveWebApp\Classlink.Dashboard.PWA\bld\Debug\priconfig.xml
+E:\DevWorkspaces\Projects\ProgressiveWebApp\Classlink.Dashboard.PWA\bld\Debug\priconfig.xml.intermediate
+E:\DevWorkspaces\Projects\ProgressiveWebApp\Classlink.Dashboard.PWA\bld\Debug\layout.resfiles
+E:\DevWorkspaces\Projects\ProgressiveWebApp\Classlink.Dashboard.PWA\bld\Debug\layout.resfiles.intermediate
+E:\DevWorkspaces\Projects\ProgressiveWebApp\Classlink.Dashboard.PWA\bld\Debug\resources.resfiles
+E:\DevWorkspaces\Projects\ProgressiveWebApp\Classlink.Dashboard.PWA\bld\Debug\resources.resfiles.intermediate
+E:\DevWorkspaces\Projects\ProgressiveWebApp\Classlink.Dashboard.PWA\bld\Debug\pri.resfiles
+E:\DevWorkspaces\Projects\ProgressiveWebApp\Classlink.Dashboard.PWA\bld\Debug\pri.resfiles.intermediate
+E:\DevWorkspaces\Projects\ProgressiveWebApp\Classlink.Dashboard.PWA\bld\Debug\qualifiers.txt
+E:\DevWorkspaces\Projects\ProgressiveWebApp\Classlink.Dashboard.PWA\bld\Debug\qualifiers.txt.intermediate
+E:\DevWorkspaces\Projects\ProgressiveWebApp\Classlink.Dashboard.PWA\bld\Debug\MultipleQualifiersPerDimensionFound.txt
+E:\DevWorkspaces\Projects\ProgressiveWebApp\Classlink.Dashboard.PWA\bld\Debug\ProjectArchitectures.txt
