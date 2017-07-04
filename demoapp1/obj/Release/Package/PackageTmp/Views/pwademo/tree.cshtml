@@ -1,0 +1,135 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Json to jQuery treeview With Ajax | CodeStrive Demo</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="~/Tree/jquery.treeview.js"></script>
+    <link href="~/Tree/screen.css" rel="stylesheet" />
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="en_US" property="og:locale">
+    <meta content="website" property="og:type">
+    <meta content="HTML Snippet, CSS Codes, JAVASCRIPT Codes,Java Tutorials, Tips & Tricks, Java Examples - CodeStrive.com" property="og:title">
+    
+    <meta content="CodeStrive.com" property="og:site_name">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" />
+    <meta name="twitter:domain" />
+    <meta name="twitter:creator">
+
+
+    <!-- stylesheet -->
+
+
+    <link href="~/Tree/fizz.css" rel="stylesheet" />
+    <link href="~/Tree/font.css" rel="stylesheet" />
+    <script src="~/Tree/lib/jquery.cookie.js"></script>
+    <script src="~/Tree/css/jquery-ui.js"></script>
+    <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+    <link href="~/Tree/jquery.treeview.css" rel="stylesheet" />
+    <script src="~/Tree/jquery.treeview.js"></script>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <script src="~/scripts/bootstrap.min.js"></script>
+    @*<link href="css/jquery-ui.css" rel="stylesheet" />*@
+    <link href="~/Tree/css/jquery-ui.css" rel="stylesheet" />
+    @*<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>*@
+    <script src="~/Tree/css/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://jqueryui.com/jquery-wp-content/themes/jqueryui.com/style.css">
+    <link href="~/Tree/MYSHEET.css" rel="stylesheet" />
+    <style type="text/css">
+        .filetree span.folder, .filetree span.file {
+            display: block;
+            padding: 2px 0 2px 17px;
+        }
+    </style>
+
+
+
+ 
+
+</head>
+
+<body>
+    <div id="TitleContainer">Json To Treeview With Ajax</div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div id="MainContainer">
+            <div id="StudentTree" style="background-color: white; margin-top: 17%;">
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <div id="main">
+
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+    </div>
+    <p class="instruction">Download the zip, after extracting find the treeview-ajax/demo/index.html</p>
+    <script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+}
+    </script>
+
+    <script src="~/Tree/demoNew.js"></script>
+
+
+    <script>
+        $(document).ready(function ()
+        {
+            var items;
+            //var append = '<li> <a class="collapsible-header waves-effect arrow-r"><i class="fa fa-chevron-right"></i>' + items + '<i class="fa fa-angle-down rotate-icon"></i></a>    </li> ';
+            $.ajax({
+
+                url: 'https://betanodeapi.classlink.com/myfiles/services',
+                type: 'GET',
+                dataType: 'json',
+                headers: {
+                    'gwstoken': '@Session["gwstokken"]'
+                },
+                contentType: 'application/x-www-form-urlencoded',
+
+
+                success: function (result) {
+                    //debugger;
+                    //addElementToLi(result);
+                    parentfolders('@Session["gwstokken"]', result);
+                },
+                failure: function (response) {
+                    alert('failure');
+                },
+                error: function (error) {
+
+                    alert('error');
+                    return false;
+                    console.log('error', error);
+
+                }
+            });
+
+
+
+        })
+
+    </script>
+</body>
+</html>

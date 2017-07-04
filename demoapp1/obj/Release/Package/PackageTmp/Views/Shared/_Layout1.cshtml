@@ -1,0 +1,128 @@
+﻿@model Classlink.Dashboard.Web.Models.configdata
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <link href="~/Style/style.css" rel="stylesheet" />
+    <link href="~/Style/test.css" rel="stylesheet" />
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <style>
+        #user_popupid {
+            display: block;
+            background-color: lightcyan;
+            width: 75%;
+            border-radius: 6%;
+        }
+
+        .navbar-inverse .navbar-brand {
+            color: #ffffff;
+        }
+
+        .navbar-inverse .navbar-nav > li > a {
+            color: #ffffff;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $('#slide-nav.navbar .container').append($('<div id="navbar-height-col"></div>'));
+            var toggler = '.navbar-toggle';
+            var pagewrapper = '#page-content';
+            var navigationwrapper = '.navbar-header';
+            var menuwidth = '100%';
+            var slidewidth = '80%';
+            var menuneg = '-100%';
+            var slideneg = '-80%';
+            $("#slide-nav").on("click", toggler, function (e) {
+                var selected = $(this).hasClass('slide-active');
+                $('#slidemenu').stop().animate({
+                    left: selected ? menuneg : '0px'
+                });
+                $('#navbar-height-col').stop().animate({
+                    left: selected ? slideneg : '0px'
+                });
+                $(pagewrapper).stop().animate({
+                    left: selected ? '0px' : slidewidth
+                });
+                $(navigationwrapper).stop().animate({
+                    left: selected ? '0px' : slidewidth
+                });
+                $(this).toggleClass('slide-active', !selected);
+                $('#slidemenu').toggleClass('slide-active');
+                $('#page-content, .navbar, body, .navbar-header').toggleClass('slide-active');
+            });
+            var selected = '#slidemenu, #page-content, body, .navbar, .navbar-header';
+            $(window).on("resize", function () {
+                if ($(window).width() > 767 && $('.navbar-toggle').is(':hidden')) {
+                    $(selected).removeClass('slide-active');
+                }
+            });
+        });
+    </script>
+</head>
+<body style="background-image:url(http://dp3vjvsy1r9i0.cloudfront.net/@Session["back"].ToString())">
+    <nav class="navbar navbar-inverse" style="background-color:#18a0c8; color:#ffffff;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="//dlkf6mjgds3hc.cloudfront.net/@Session["profile"]" class="profileimage" style="float:left; margin-right:10%" /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Home</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Page 1-1</a></li>
+                            <li><a href="#">Page 1-2</a></li>
+                            <li><a href="#">Page 1-3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Page 2</a></li>
+                    <li><a href="#">Page 3</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <!--try-->
+                    <!--end try -->
+                    <li>@Html.ActionLink("Logout", "Logout", "Home",new { @id=1}) </li>
+
+                </ul>
+            </div>
+        </div>
+
+
+    </nav>
+
+
+
+
+
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
+    <script type="text/javascript" src="//betalaunchpad.classlink.com/resources/modernizr/modernizr.min.js?t=1497620493292"></script>
+
+
+    <script type="text/javascript" src="//betalaunchpad.classlink.com/resources/require/require.js?t=1497620493292"></script>
+
+
+
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+</html>

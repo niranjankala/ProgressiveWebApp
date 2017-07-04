@@ -266,9 +266,6 @@
     <Content Include="BootSideMenu\img\paypal_coffee.png" />
     <Content Include="BootSideMenu\index.html" />
     <Content Include="BootSideMenu\js\BootSideMenu.js" />
-    <Content Include="code\MainSidebar.html" />
-    <Content Include="code\sidebar.js" />
-    <Content Include="code\theme1.css" />
     <Content Include="Content\BootSideMenu\css\BootSideMenu.css" />
     <Content Include="Content\BootSideMenu\examples\0-menu-template.html" />
     <Content Include="Content\BootSideMenu\examples\1-simple-left.html" />
@@ -284,11 +281,6 @@
     <Content Include="Content\BootSideMenu\js\BootSideMenu.js" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="demoscript\font-awesome.min.css" />
-    <Content Include="demoscript\mdbootjs.js" />
-    <Content Include="demoscript\Myfile\dataFactory.js" />
-    <Content Include="demoscript\Myfile\myfileConfig.js" />
-    <Content Include="demoscript\Myfile\myfileController.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -305,7 +297,6 @@
     <Content Include="js\angular.js" />
     <Content Include="js\JavaScript.js" />
     <Content Include="js\login.js" />
-    <Content Include="demoscript\Myfile\module.js" />
     <Content Include="js\pwatest.js" />
     <Content Include="offline.html" />
     <Content Include="pwabuilder-sw-register.js" />
@@ -321,7 +312,6 @@
     <Content Include="client_secret.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="demoscript\compiled.min.css" />
     <Content Include="BootSideMenu\package.json" />
     <Content Include="BootSideMenu\README.md" />
     <Content Include="Content\BootSideMenu\package.json" />
@@ -346,8 +336,6 @@
     <Content Include="Style\test.css" />
     <Content Include="Style\theme.css" />
     <Content Include="Style\theme2.css" />
-    <Content Include="TEST\Style.js" />
-    <Content Include="TEST\STYLE2.css" />
     <Content Include="tree\Images\ChildNode.png" />
     <Content Include="tree\Images\Collapse.png" />
     <Content Include="tree\Images\lastnode.png" />
