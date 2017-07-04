@@ -241,6 +241,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="jqueryfiletree-master\dist\connectors\Asp.Net-MVC\FileTreeController.cs" />
+    <Compile Include="jqueryfiletree-master\dist\connectors\Asp.Net-MVC\FileTreeViewModel.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ClientConfigDataLists.cs" />
     <Compile Include="Models\configdata.cs" />
@@ -253,19 +255,6 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="BootSideMenu\css\BootSideMenu.css" />
-    <Content Include="BootSideMenu\examples\0-menu-template.html" />
-    <Content Include="BootSideMenu\examples\1-simple-left.html" />
-    <Content Include="BootSideMenu\examples\2-simple-right.html" />
-    <Content Include="BootSideMenu\examples\3-duration.html" />
-    <Content Include="BootSideMenu\examples\4-width.html" />
-    <Content Include="BootSideMenu\examples\5-close-on-click.html" />
-    <Content Include="BootSideMenu\examples\6-events.html" />
-    <Content Include="BootSideMenu\examples\7-on-toggler-click.html" />
-    <Content Include="BootSideMenu\img\avatar.png" />
-    <Content Include="BootSideMenu\img\paypal_coffee.png" />
-    <Content Include="BootSideMenu\index.html" />
-    <Content Include="BootSideMenu\js\BootSideMenu.js" />
     <Content Include="code\MainSidebar.html" />
     <Content Include="code\sidebar.js" />
     <Content Include="code\theme1.css" />
@@ -288,11 +277,45 @@
     <Content Include="image\Capture.JPG" />
     <Content Include="image\cl1.png" />
     <Content Include="image\sign.JPG" />
+    <Content Include="jqueryfiletree-master\dist\connectors\jqueryFileTree.asp" />
+    <Content Include="jqueryfiletree-master\dist\connectors\jqueryFileTree.aspx" />
+    <Content Include="jqueryfiletree-master\dist\connectors\jqueryFileTree.js" />
+    <Content Include="jqueryfiletree-master\dist\images\application.png" />
+    <Content Include="jqueryfiletree-master\dist\images\code.png" />
+    <Content Include="jqueryfiletree-master\dist\images\css.png" />
+    <Content Include="jqueryfiletree-master\dist\images\db.png" />
+    <Content Include="jqueryfiletree-master\dist\images\directory-lock.png" />
+    <Content Include="jqueryfiletree-master\dist\images\directory.png" />
+    <Content Include="jqueryfiletree-master\dist\images\doc.png" />
+    <Content Include="jqueryfiletree-master\dist\images\file-lock.png" />
+    <Content Include="jqueryfiletree-master\dist\images\file.png" />
+    <Content Include="jqueryfiletree-master\dist\images\film.png" />
+    <Content Include="jqueryfiletree-master\dist\images\flash.png" />
+    <Content Include="jqueryfiletree-master\dist\images\folder_open.png" />
+    <Content Include="jqueryfiletree-master\dist\images\html.png" />
+    <Content Include="jqueryfiletree-master\dist\images\java.png" />
+    <Content Include="jqueryfiletree-master\dist\images\linux.png" />
+    <Content Include="jqueryfiletree-master\dist\images\music.png" />
+    <Content Include="jqueryfiletree-master\dist\images\pdf.png" />
+    <Content Include="jqueryfiletree-master\dist\images\php.png" />
+    <Content Include="jqueryfiletree-master\dist\images\picture.png" />
+    <Content Include="jqueryfiletree-master\dist\images\ppt.png" />
+    <Content Include="jqueryfiletree-master\dist\images\psd.png" />
+    <Content Include="jqueryfiletree-master\dist\images\ruby.png" />
+    <Content Include="jqueryfiletree-master\dist\images\script.png" />
+    <Content Include="jqueryfiletree-master\dist\images\spinner.gif" />
+    <Content Include="jqueryfiletree-master\dist\images\txt.png" />
+    <Content Include="jqueryfiletree-master\dist\images\xls.png" />
+    <Content Include="jqueryfiletree-master\dist\images\zip.png" />
+    <Content Include="jqueryfiletree-master\dist\jQueryFileTree.min.css" />
+    <Content Include="jqueryfiletree-master\dist\jQueryFileTree.min.js" />
+    <Content Include="jqueryfiletree-master\gulpfile.js" />
+    <Content Include="jqueryfiletree-master\src\jQueryFileTree.css" />
+    <Content Include="jqueryfiletree-master\src\jQueryFileTree.js" />
+    <Content Include="jqueryfiletree-master\tests\manual\index.html" />
     <Content Include="js\angular-route-1-2-RC.js" />
     <Content Include="js\angular.js" />
-    <Content Include="js\BootSideMenu.js" />
     <Content Include="js\JavaScript.js" />
-    <Content Include="js\JavaScript12.js" />
     <Content Include="js\login.js" />
     <Content Include="demoscript\Myfile\module.js" />
     <Content Include="js\pwatest.js" />
@@ -311,8 +334,30 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="demoscript\compiled.min.css" />
-    <Content Include="BootSideMenu\package.json" />
-    <Content Include="BootSideMenu\README.md" />
+    <Content Include="jqueryfiletree-master\.gitignore" />
+    <Content Include="jqueryfiletree-master\bower.json" />
+    <Content Include="jqueryfiletree-master\CHANGELOG.md" />
+    <Content Include="jqueryfiletree-master\dist\connectors\Asp.Net-MVC\GetFiles.cshtml" />
+    <Content Include="jqueryfiletree-master\dist\connectors\jqueryFileTree.cf" />
+    <Content Include="jqueryfiletree-master\dist\connectors\jqueryFileTree.go" />
+    <Content Include="jqueryfiletree-master\dist\connectors\jqueryFileTree.jsp" />
+    <Content Include="jqueryfiletree-master\dist\connectors\jqueryFileTree.php" />
+    <Content Include="jqueryfiletree-master\dist\connectors\jqueryFileTree.pl" />
+    <Content Include="jqueryfiletree-master\dist\connectors\jqueryFileTree.py" />
+    <Content Include="jqueryfiletree-master\dist\connectors\jqueryFileTree.rb" />
+    <Content Include="jqueryfiletree-master\dist\connectors\jqueryFileTree2.pl" />
+    <Content Include="jqueryfiletree-master\dist\connectors\jqueryFileTree_huck.lasso" />
+    <Content Include="jqueryfiletree-master\dist\connectors\jqueryFileTree_sabourdin.lasso" />
+    <Content Include="jqueryfiletree-master\dist\connectors\PHP-Laravel\5\app\Http\Controllers\FileTreeController.php" />
+    <Content Include="jqueryfiletree-master\dist\connectors\PHP-Laravel\5\app\Http\routes.php" />
+    <Content Include="jqueryfiletree-master\dist\connectors\PHP-Laravel\5\app\resources\views\partials\file-tree.blade.php" />
+    <Content Include="jqueryfiletree-master\dist\connectors\PHP-Laravel\5\app\resources\views\some-view.blade.php" />
+    <Content Include="jqueryfiletree-master\package.json" />
+    <Content Include="jqueryfiletree-master\README.md" />
+    <Content Include="jqueryfiletree-master\src\coffeescript\jQueryFileTree.coffee" />
+    <Content Include="jqueryfiletree-master\src\less\jQueryFileTree.less" />
+    <Content Include="jqueryfiletree-master\tests\manual\bower.json" />
+    <Content Include="jqueryfiletree-master\tests\manual\css\less\jqft-test.less" />
     <None Include="Properties\PublishProfiles\rahul.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -326,6 +371,19 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="Sliding-Side-Menu-Panel-with-jQuery-Bootstrap-BootSideMenu\css\BootSideMenu.css" />
+    <Content Include="Sliding-Side-Menu-Panel-with-jQuery-Bootstrap-BootSideMenu\examples\0-menu-template.html" />
+    <Content Include="Sliding-Side-Menu-Panel-with-jQuery-Bootstrap-BootSideMenu\examples\1-simple-left.html" />
+    <Content Include="Sliding-Side-Menu-Panel-with-jQuery-Bootstrap-BootSideMenu\examples\2-simple-right.html" />
+    <Content Include="Sliding-Side-Menu-Panel-with-jQuery-Bootstrap-BootSideMenu\examples\3-duration.html" />
+    <Content Include="Sliding-Side-Menu-Panel-with-jQuery-Bootstrap-BootSideMenu\examples\4-width.html" />
+    <Content Include="Sliding-Side-Menu-Panel-with-jQuery-Bootstrap-BootSideMenu\examples\5-close-on-click.html" />
+    <Content Include="Sliding-Side-Menu-Panel-with-jQuery-Bootstrap-BootSideMenu\examples\6-events.html" />
+    <Content Include="Sliding-Side-Menu-Panel-with-jQuery-Bootstrap-BootSideMenu\examples\7-on-toggler-click.html" />
+    <Content Include="Sliding-Side-Menu-Panel-with-jQuery-Bootstrap-BootSideMenu\img\avatar.png" />
+    <Content Include="Sliding-Side-Menu-Panel-with-jQuery-Bootstrap-BootSideMenu\img\paypal_coffee.png" />
+    <Content Include="Sliding-Side-Menu-Panel-with-jQuery-Bootstrap-BootSideMenu\index.html" />
+    <Content Include="Sliding-Side-Menu-Panel-with-jQuery-Bootstrap-BootSideMenu\js\BootSideMenu.js" />
     <Content Include="Style\font.css" />
     <Content Include="Style\login.css" />
     <Content Include="Style\style.css" />
@@ -383,9 +441,11 @@
     <Content Include="Views\Account\Index.cshtml" />
     <Content Include="Views\Default\Index.cshtml" />
     <Content Include="Views\pwademo\MyFiles.cshtml" />
-    <Content Include="Views\pwademo\tree.cshtml" />
-    <Content Include="Views\Shared\_LayoutMyFiles.cshtml" />
     <Content Include="Views\pwademo\TESTFILE.cshtml" />
+    <Content Include="Sliding-Side-Menu-Panel-with-jQuery-Bootstrap-BootSideMenu\.gitignore" />
+    <Content Include="Sliding-Side-Menu-Panel-with-jQuery-Bootstrap-BootSideMenu\package.json" />
+    <Content Include="Sliding-Side-Menu-Panel-with-jQuery-Bootstrap-BootSideMenu\README.md" />
+    <Content Include="Views\pwademo\tree.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
