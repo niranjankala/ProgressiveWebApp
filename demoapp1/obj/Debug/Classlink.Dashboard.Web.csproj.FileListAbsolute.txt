@@ -12,9 +12,6 @@ E:\DevWorkspaces\Projects\ProgressiveWebApp\demoapp1\bin\roslyn\vbc.exe
 E:\DevWorkspaces\Projects\ProgressiveWebApp\demoapp1\bin\roslyn\VBCSCompiler.exe
 E:\DevWorkspaces\Projects\ProgressiveWebApp\demoapp1\bin\roslyn\VBCSCompiler.exe.config
 E:\DevWorkspaces\Projects\ProgressiveWebApp\demoapp1\bin\client_secret.json
-E:\DevWorkspaces\Projects\ProgressiveWebApp\demoapp1\bin\demoapp1.dll.config
-E:\DevWorkspaces\Projects\ProgressiveWebApp\demoapp1\bin\demoapp1.dll
-E:\DevWorkspaces\Projects\ProgressiveWebApp\demoapp1\bin\demoapp1.pdb
 E:\DevWorkspaces\Projects\ProgressiveWebApp\demoapp1\bin\Antlr3.Runtime.dll
 E:\DevWorkspaces\Projects\ProgressiveWebApp\demoapp1\bin\EntityFramework.dll
 E:\DevWorkspaces\Projects\ProgressiveWebApp\demoapp1\bin\EntityFramework.SqlServer.dll
@@ -90,5 +87,9 @@ E:\DevWorkspaces\Projects\ProgressiveWebApp\demoapp1\bin\EntityFramework.SqlServ
 E:\DevWorkspaces\Projects\ProgressiveWebApp\demoapp1\bin\Microsoft.AspNet.Identity.Core.xml
 E:\DevWorkspaces\Projects\ProgressiveWebApp\demoapp1\bin\Microsoft.AspNet.Identity.Owin.xml
 E:\DevWorkspaces\Projects\ProgressiveWebApp\demoapp1\bin\Microsoft.AspNet.Identity.EntityFramework.xml
-E:\DevWorkspaces\Projects\ProgressiveWebApp\demoapp1\obj\Debug\demoapp1.dll
-E:\DevWorkspaces\Projects\ProgressiveWebApp\demoapp1\obj\Debug\demoapp1.pdb
+E:\DevWorkspaces\Projects\ProgressiveWebApp\demoapp1\obj\Debug\Classlink.Dashboard.Web.csprojResolveAssemblyReference.cache
+E:\DevWorkspaces\Projects\ProgressiveWebApp\demoapp1\bin\Classlink.Dashboard.Web.dll.config
+E:\DevWorkspaces\Projects\ProgressiveWebApp\demoapp1\bin\Classlink.Dashboard.Web.dll
+E:\DevWorkspaces\Projects\ProgressiveWebApp\demoapp1\bin\Classlink.Dashboard.Web.pdb
+E:\DevWorkspaces\Projects\ProgressiveWebApp\demoapp1\obj\Debug\Classlink.Dashboard.Web.dll
+E:\DevWorkspaces\Projects\ProgressiveWebApp\demoapp1\obj\Debug\Classlink.Dashboard.Web.pdb
