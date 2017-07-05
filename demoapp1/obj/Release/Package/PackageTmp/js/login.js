@@ -1,4 +1,4 @@
-﻿/// <reference path="c:\users\rahuldubey\documents\visual studio 2015\Projects\Classlink.Dashboard.Web\scripts/jquery-1.10.2.min.js" />
+﻿
 
 
 var app = [
@@ -53,11 +53,13 @@ document.getElementById('btnlogin').addEventListener('click', function () {
                 success: function (result) {
                     autherizeUser(result.UserDomainList[0].DN);
                     console.log(result);
+                
 
                 },
                 error: function (error) {
                     alert('error'); return false;
                     console.log('error', error);
+                    $(".loader").fadeOut("slow");
                 }
             });
         }
@@ -92,16 +94,19 @@ function autherizeUser(DN) {
 
             generatedtoken(result.AuthUserBasicDetail.GWSToken);
             console.log(result);
+           
 
         },
         failure: function (response) {
             alert('failure');
+            $(".loader").fadeOut("slow");
         },
         error: function (error) {
 
             alert('error');
             return false;
             console.log('error', error);
+            $(".loader").fadeOut("slow");
 
         }
     });
@@ -124,12 +129,13 @@ function generatedtoken(gwstoken) {
 
 
         success: function (result) {
-
+           
             jump(result, gwstoken);
 
         },
         failure: function (response) {
             console.log(result);
+            $(".loader").fadeOut("slow");
 
 
             alert('error'); return false;
@@ -137,6 +143,7 @@ function generatedtoken(gwstoken) {
         error: function (error) {
 
             alert('error'); return false;
+            $(".loader").fadeOut("slow");
 
         }
     });

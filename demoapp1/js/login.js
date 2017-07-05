@@ -53,7 +53,7 @@ document.getElementById('btnlogin').addEventListener('click', function () {
                 success: function (result) {
                     autherizeUser(result.UserDomainList[0].DN);
                     console.log(result);
-                    $(".loader").fadeOut("slow");
+                
 
                 },
                 error: function (error) {
@@ -94,7 +94,7 @@ function autherizeUser(DN) {
 
             generatedtoken(result.AuthUserBasicDetail.GWSToken);
             console.log(result);
-            $(".loader").fadeOut("slow");
+           
 
         },
         failure: function (response) {
@@ -129,7 +129,7 @@ function generatedtoken(gwstoken) {
 
 
         success: function (result) {
-            $(".loader").fadeOut("slow");
+           
             jump(result, gwstoken);
 
         },

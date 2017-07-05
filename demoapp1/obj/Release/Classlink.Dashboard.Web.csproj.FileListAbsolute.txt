@@ -92,3 +92,4 @@ E:\DevWorkspaces\Projects\ProgressiveWebApp\demoapp1\bin\Microsoft.AspNet.Identi
 E:\DevWorkspaces\Projects\ProgressiveWebApp\demoapp1\bin\Microsoft.AspNet.Identity.EntityFramework.xml
 E:\DevWorkspaces\Projects\ProgressiveWebApp\demoapp1\obj\Release\demoapp1.dll
 E:\DevWorkspaces\Projects\ProgressiveWebApp\demoapp1\obj\Release\demoapp1.pdb
+E:\DevWorkspaces\Projects\ProgressiveWebApp\demoapp1\obj\Release\Classlink.Dashboard.Web.csprojResolveAssemblyReference.cache

@@ -6,7 +6,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <_PublishTargetUrl>C:\Users\Rahuldubey\Desktop\pwa</_PublishTargetUrl>
+    <_PublishTargetUrl>E:\PublishedSites\new_ClasslinkPWA</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="ApplicationInsights.config">
@@ -22,7 +22,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/30/2017 12:22:14</publishTime>
     </File>
     <File Include="bin/demoapp1.dll">
-      <publishTime>07/04/2017 11:16:05</publishTime>
+      <publishTime>07/04/2017 14:02:02</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>06/30/2017 12:22:15</publishTime>
@@ -334,7 +334,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/03/2017 18:11:57</publishTime>
     </File>
     <File Include="js/login.js">
-      <publishTime>07/04/2017 11:04:17</publishTime>
+      <publishTime>07/04/2017 14:08:49</publishTime>
     </File>
     <File Include="js/pwatest.js">
       <publishTime>06/27/2017 17:54:38</publishTime>
@@ -520,7 +520,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/04/2017 10:28:53</publishTime>
     </File>
     <File Include="Views/pwademo/TESTFILE.cshtml">
-      <publishTime>07/04/2017 10:24:54</publishTime>
+      <publishTime>07/04/2017 11:24:17</publishTime>
     </File>
     <File Include="Views/pwademo/tree.cshtml">
       <publishTime>06/30/2017 16:21:19</publishTime>
@@ -535,7 +535,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/22/2017 15:06:01</publishTime>
     </File>
     <File Include="Views/Shared/_Layout1.cshtml">
-      <publishTime>07/04/2017 10:42:57</publishTime>
+      <publishTime>07/04/2017 11:22:57</publishTime>
     </File>
     <File Include="Views/Shared/_LoginPartial.cshtml">
       <publishTime>06/22/2017 15:06:01</publishTime>
