@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classlink.web", "Classlink.web\Classlink.web.csproj", "{ED9AEBC7-4BC6-406C-B134-B56C90F74B25}"
 EndProject
-Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "Classlink.UWA", "..\Classlink.UWA\Classlink.UWA.jsproj", "{774F901E-9A5B-417C-8F58-52A746903397}"
+Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "Classlink.UWA", "Classlink.UWA\Classlink.UWA.jsproj", "{774F901E-9A5B-417C-8F58-52A746903397}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
