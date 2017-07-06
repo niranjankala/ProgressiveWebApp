@@ -1,0 +1,16 @@
+c:\users\rahuldubey\documents\visual studio 2015\Classlink.UWA\bin\Debug\AppxManifest.xml
+c:\users\rahuldubey\documents\visual studio 2015\Classlink.UWA\bin\Debug\Classlink.UWA.build.appxrecipe
+c:\users\rahuldubey\documents\visual studio 2015\Classlink.UWA\bld\Debug\ResourceHandlingTask.state
+c:\users\rahuldubey\documents\visual studio 2015\Classlink.UWA\bld\Debug\priconfig.xml
+c:\users\rahuldubey\documents\visual studio 2015\Classlink.UWA\bld\Debug\priconfig.xml.intermediate
+c:\users\rahuldubey\documents\visual studio 2015\Classlink.UWA\bld\Debug\layout.resfiles
+c:\users\rahuldubey\documents\visual studio 2015\Classlink.UWA\bld\Debug\layout.resfiles.intermediate
+c:\users\rahuldubey\documents\visual studio 2015\Classlink.UWA\bld\Debug\resources.resfiles
+c:\users\rahuldubey\documents\visual studio 2015\Classlink.UWA\bld\Debug\resources.resfiles.intermediate
+c:\users\rahuldubey\documents\visual studio 2015\Classlink.UWA\bld\Debug\pri.resfiles
+c:\users\rahuldubey\documents\visual studio 2015\Classlink.UWA\bld\Debug\pri.resfiles.intermediate
+c:\users\rahuldubey\documents\visual studio 2015\Classlink.UWA\bld\Debug\qualifiers.txt
+c:\users\rahuldubey\documents\visual studio 2015\Classlink.UWA\bld\Debug\qualifiers.txt.intermediate
+c:\users\rahuldubey\documents\visual studio 2015\Classlink.UWA\bld\Debug\MultipleQualifiersPerDimensionFound.txt
+c:\users\rahuldubey\documents\visual studio 2015\Classlink.UWA\bld\Debug\ProjectArchitectures.txt
+c:\users\rahuldubey\documents\visual studio 2015\Classlink.UWA\bin\Debug\resources.pri

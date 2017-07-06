@@ -1,0 +1,148 @@
+﻿@using Classlink.web.Models
+@model Login
+
+
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Classlink Login - Enter your login Credential to continue with this application</title>
+    <!--Different Browser icon for All Devices -->
+    <link href="~/favicon.ico?v=0.025920" rel="icon" type="image/x-icon">
+    <!--IE Browser icon for All Devices -->
+    <link href="~/favicon.ico?v=0.025920" rel="shortcut icon" type="image/x-icon">
+    <link href="~/favicon.ico?v=0.025920" rel="shortcut icon" type="image/ico">
+    <!--Icon for Devices -->
+    <link href="~/favicon.ico?v=0.025920" rel="apple-touch-icon">
+    <!--Icon for Devices -->
+    <link href="~/favicon.ico?v=0.025920" rel="apple-touch-icon-precomposed">
+    <!--CSS -->
+    <link href="~/stylesheets/bootstrap.min.css?v=0.025920" media="screen, projection" rel="stylesheet" type="text/css">
+    <link href="~/stylesheets/bootstrap-theme.min.css?v=0.025920" media="screen, projection" rel="stylesheet" type="text/css">
+    <link href="~/stylesheets/AdminLTE.css" media="screen, projection" rel="stylesheet" type="text/css">
+    <link href="~/stylesheets/screen.css?v=0.1" media="screen, projection" rel="stylesheet" type="text/css">
+    <!--Ends CSS -->
+    <!--Script -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="javascripts/modernizr-custom.js"></script>
+    <![endif]-->
+    <!--Ends Script -->
+ 
+    <style>
+    
+
+        .loader {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background: url('../../Images/page-loader.gif') 50% 50% no-repeat rgb(249,249,249);
+            opacity: .8;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="loader"></div>
+   @using (Html.BeginForm(null, null, FormMethod.Post, new { id = "signupform" }))
+   {
+
+    @Html.AntiForgeryToken()
+        <!--Wrapper Scope -->
+        <div class="wrapper-scope" id="wrapper-scope">
+            <!--Login Page Scope -->
+            <div class="login-page-scope">
+                <!--Artboard Scope -->
+                <div class="artboard-scope">
+                    <!--Right Form Scope -->
+                    <!--hdn field-->
+                    <input type="hidden" id="hdn1" name="hdn1" />
+
+
+                    <input type="hidden" id="hdn2" name="hdn2" />
+                    <!--end -->
+                    <div class="right-form-scope">
+                        <!--Section Scope -->
+                        <div class="section-scope">
+                            <!--Form Scope -->
+                            <div class="form-scope" tabindex="0">
+                                <!--Login Scope -->
+                                <div class="login-scope">
+                                    <div class="logo-scope"><img src="~/images/logo.png" alt="Classlink" title="" /></div>
+                                    <!--Form Field -->
+                                    <div class="form-group form-field">
+
+                                        <input type="text" name="UserId" id="txtname" value="@Model.Name" size="10" tabindex="1" class="form-control">
+                                        <label for="UserId" class="form-label control-label">User Name</label>
+                                    </div>
+                                    <!--Ends Form Field -->
+                                    <!--Form Field -->
+                                    <div class="form-group form-field">
+                                        <input type="password" name="Password" id="txtpwd" value="@Model.Password" size="10" tabindex="2" class="form-control">
+                                        <label for="Password" class="form-label control-label">Password</label>
+                                    </div>
+                                    <!--Ends Form Field -->
+                                    <!--Form Field -->
+                                    <div class="form-group form-field">
+                                        <input type="text" name="SchoolCode" id="txtcode" value="@Model.Code" size="10" tabindex="3" class="form-control">
+                                        <label for="UserId" class="form-label control-label">School Code</label>
+                                    </div>
+                                    <!--Ends Form Field -->
+                                    <!--Form Content -->
+                                    <div class="form-content">
+                                        <a href="##" target="_self" tabindex="4">Don't have an account ?</a>
+                                        <a href="##" target="_self" tabindex="5" class="pull-right">Forgot Password ?</a>
+                                    </div>
+                                    <!--Ends Form Content -->
+                                    <!--Form Buttons -->
+                                    <div class="box-footer form-buttons">
+                                        <input type="button" id="btnlogin" value="Sign-In"  class="btn btn-primary bg-white" tabindex="6">
+                                      
+                                    </div>
+                                    <!--Ends Form Buttons -->
+                                    <!--- Partial view For login with socile site--->
+
+                                    @Html.Partial("login", new ExternalLoginListViewModel { ReturnUrl = ViewBag.ReturnUrl })
+                                    <!--</form>-->
+                                </div>
+                                <!--Ends Login Scope -->
+                            </div>
+                            <!--Ends Form Scope -->
+                        </div>
+                        <!--Ends Section Scope -->
+                    </div>
+                    <!--Ends Right Form Scope -->
+                </div>
+                <!--Ends Artboard Scope -->
+            </div>
+            <!--Ends Login Page -->
+        </div>
+
+   }
+    
+
+    <!--Ends Wrapper Scope -->
+    <script type="text/javascript" src="~/javascripts/jquery.min.js?v=0.1"></script>
+    <script type="text/javascript" src="~/javascripts/jquery-migrate.min.js?v=0.1"></script>
+    <script type="text/javascript" src="~/javascripts/bootstrap.min.js?v=0.1"></script>
+    <script type="text/javascript" src="~/javascripts/custom.js?v=0.1"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $(".loader").fadeOut("slow");
+    });
+    </script>
+    <script src="~/js/login.js"></script>
+</body>
+</html>

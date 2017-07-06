@@ -1,0 +1,988 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\Rahuldubey\Desktop\New folder</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="ApplicationInsights.config">
+      <publishTime>07/05/2017 16:52:28</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>02/22/2013 08:43:40</publishTime>
+    </File>
+    <File Include="bin/ApplicationInsights.config">
+      <publishTime>07/05/2017 16:52:28</publishTime>
+    </File>
+    <File Include="bin/Classlink.web.dll">
+      <publishTime>07/05/2017 18:45:36</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>03/02/2015 09:32:26</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>03/02/2015 09:32:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>12/07/2015 19:04:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>03/10/2016 14:26:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>03/10/2016 14:26:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>03/09/2016 12:00:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>03/10/2016 14:26:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>03/10/2016 14:26:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>03/09/2016 11:57:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Core.dll">
+      <publishTime>04/03/2015 17:07:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.EntityFramework.dll">
+      <publishTime>04/03/2015 17:07:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Owin.dll">
+      <publishTime>04/03/2015 17:07:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>06/15/2015 02:06:24</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.dll">
+      <publishTime>02/13/2015 13:16:30</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Host.SystemWeb.dll">
+      <publishTime>02/13/2015 13:16:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Cookies.dll">
+      <publishTime>02/13/2015 13:16:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.dll">
+      <publishTime>02/13/2015 13:16:36</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Facebook.dll">
+      <publishTime>02/13/2015 13:16:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Google.dll">
+      <publishTime>02/13/2015 13:16:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.MicrosoftAccount.dll">
+      <publishTime>02/13/2015 13:16:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.OAuth.dll">
+      <publishTime>02/13/2015 13:16:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Twitter.dll">
+      <publishTime>02/13/2015 13:16:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>04/23/2012 15:23:58</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>08/03/2014 20:33:56</publishTime>
+    </File>
+    <File Include="bin/Owin.dll">
+      <publishTime>11/27/2012 13:00:52</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>01/28/2015 04:02:18</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>02/11/2014 15:26:04</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>01/28/2015 04:02:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>09/10/2013 17:28:38</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>07/05/2017 16:52:02</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>07/05/2017 16:52:02</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>07/05/2017 16:51:56</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>07/05/2017 16:51:56</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.eot">
+      <publishTime>07/05/2017 17:02:06</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.svg">
+      <publishTime>07/05/2017 17:02:06</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.ttf">
+      <publishTime>07/05/2017 17:02:06</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.woff">
+      <publishTime>07/05/2017 17:02:06</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.woff2">
+      <publishTime>07/05/2017 17:02:06</publishTime>
+    </File>
+    <File Include="fonts/FontAwesome.otf">
+      <publishTime>07/05/2017 17:02:06</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>07/05/2017 17:02:07</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>07/05/2017 17:02:07</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>07/05/2017 17:02:07</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>07/05/2017 17:02:07</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>07/05/2017 17:02:07</publishTime>
+    </File>
+    <File Include="fonts/Roboto-Black-webfont.eot">
+      <publishTime>07/05/2017 17:02:07</publishTime>
+    </File>
+    <File Include="fonts/Roboto-Black-webfont.svg">
+      <publishTime>07/05/2017 17:02:07</publishTime>
+    </File>
+    <File Include="fonts/Roboto-Black-webfont.ttf">
+      <publishTime>07/05/2017 17:02:07</publishTime>
+    </File>
+    <File Include="fonts/Roboto-Black-webfont.woff">
+      <publishTime>07/05/2017 17:02:07</publishTime>
+    </File>
+    <File Include="fonts/Roboto-BlackItalic-webfont.eot">
+      <publishTime>07/05/2017 17:02:07</publishTime>
+    </File>
+    <File Include="fonts/Roboto-BlackItalic-webfont.svg">
+      <publishTime>07/05/2017 17:02:07</publishTime>
+    </File>
+    <File Include="fonts/Roboto-BlackItalic-webfont.ttf">
+      <publishTime>07/05/2017 17:02:07</publishTime>
+    </File>
+    <File Include="fonts/Roboto-BlackItalic-webfont.woff">
+      <publishTime>07/05/2017 17:02:07</publishTime>
+    </File>
+    <File Include="fonts/Roboto-Bold-webfont.eot">
+      <publishTime>07/05/2017 17:02:07</publishTime>
+    </File>
+    <File Include="fonts/Roboto-Bold-webfont.svg">
+      <publishTime>07/05/2017 17:02:07</publishTime>
+    </File>
+    <File Include="fonts/Roboto-Bold-webfont.ttf">
+      <publishTime>07/05/2017 17:02:07</publishTime>
+    </File>
+    <File Include="fonts/Roboto-Bold-webfont.woff">
+      <publishTime>07/05/2017 17:02:07</publishTime>
+    </File>
+    <File Include="fonts/Roboto-BoldItalic-webfont.eot">
+      <publishTime>07/05/2017 17:02:07</publishTime>
+    </File>
+    <File Include="fonts/Roboto-BoldItalic-webfont.svg">
+      <publishTime>07/05/2017 17:02:07</publishTime>
+    </File>
+    <File Include="fonts/Roboto-BoldItalic-webfont.ttf">
+      <publishTime>07/05/2017 17:02:07</publishTime>
+    </File>
+    <File Include="fonts/Roboto-BoldItalic-webfont.woff">
+      <publishTime>07/05/2017 17:02:07</publishTime>
+    </File>
+    <File Include="fonts/Roboto-Italic-webfont.eot">
+      <publishTime>07/05/2017 17:02:07</publishTime>
+    </File>
+    <File Include="fonts/Roboto-Italic-webfont.svg">
+      <publishTime>07/05/2017 17:02:07</publishTime>
+    </File>
+    <File Include="fonts/Roboto-Italic-webfont.ttf">
+      <publishTime>07/05/2017 17:02:07</publishTime>
+    </File>
+    <File Include="fonts/Roboto-Italic-webfont.woff">
+      <publishTime>07/05/2017 17:02:07</publishTime>
+    </File>
+    <File Include="fonts/Roboto-Light-webfont.eot">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/Roboto-Light-webfont.svg">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/Roboto-Light-webfont.ttf">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/Roboto-Light-webfont.woff">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/Roboto-LightItalic-webfont.eot">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/Roboto-LightItalic-webfont.svg">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/Roboto-LightItalic-webfont.ttf">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/Roboto-LightItalic-webfont.woff">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/Roboto-Medium-webfont.eot">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/Roboto-Medium-webfont.svg">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/Roboto-Medium-webfont.ttf">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/Roboto-Medium-webfont.woff">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/Roboto-MediumItalic-webfont.eot">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/Roboto-MediumItalic-webfont.svg">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/Roboto-MediumItalic-webfont.ttf">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/Roboto-MediumItalic-webfont.woff">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/Roboto-Regular-webfont.eot">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/Roboto-Regular-webfont.svg">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/Roboto-Regular-webfont.ttf">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/Roboto-Regular-webfont.woff">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/Roboto-Thin-webfont.eot">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/Roboto-Thin-webfont.svg">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/Roboto-Thin-webfont.ttf">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/Roboto-Thin-webfont.woff">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/Roboto-ThinItalic-webfont.eot">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/Roboto-ThinItalic-webfont.svg">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/Roboto-ThinItalic-webfont.ttf">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/Roboto-ThinItalic-webfont.woff">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/RobotoCondensed-Bold-webfont.eot">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/RobotoCondensed-Bold-webfont.svg">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/RobotoCondensed-Bold-webfont.ttf">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/RobotoCondensed-Bold-webfont.woff">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/RobotoCondensed-BoldItalic-webfont.eot">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/RobotoCondensed-BoldItalic-webfont.svg">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/RobotoCondensed-BoldItalic-webfont.ttf">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/RobotoCondensed-BoldItalic-webfont.woff">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/RobotoCondensed-Italic-webfont.eot">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/RobotoCondensed-Italic-webfont.svg">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/RobotoCondensed-Italic-webfont.ttf">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/RobotoCondensed-Italic-webfont.woff">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/RobotoCondensed-Light-webfont.eot">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/RobotoCondensed-Light-webfont.svg">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/RobotoCondensed-Light-webfont.ttf">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/RobotoCondensed-Light-webfont.woff">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/RobotoCondensed-LightItalic-webfont.eot">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/RobotoCondensed-LightItalic-webfont.svg">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/RobotoCondensed-LightItalic-webfont.ttf">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/RobotoCondensed-LightItalic-webfont.woff">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/RobotoCondensed-Regular-webfont.eot">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/RobotoCondensed-Regular-webfont.svg">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/RobotoCondensed-Regular-webfont.ttf">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/RobotoCondensed-Regular-webfont.woff">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/websymbols-regular-webfont.eot">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/websymbols-regular-webfont.svg">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/websymbols-regular-webfont.ttf">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="fonts/websymbols-regular-webfont.woff">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>07/05/2017 16:51:56</publishTime>
+    </File>
+    <File Include="HTML/fonts/fontawesome-webfont.eot">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/fontawesome-webfont.svg">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/fontawesome-webfont.ttf">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/fontawesome-webfont.woff">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/fontawesome-webfont.woff2">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/FontAwesome.otf">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/Roboto-Black-webfont.eot">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/Roboto-Black-webfont.svg">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/Roboto-Black-webfont.ttf">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/Roboto-Black-webfont.woff">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/Roboto-BlackItalic-webfont.eot">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/Roboto-BlackItalic-webfont.svg">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/Roboto-BlackItalic-webfont.ttf">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/Roboto-BlackItalic-webfont.woff">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/Roboto-Bold-webfont.eot">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/Roboto-Bold-webfont.svg">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/Roboto-Bold-webfont.ttf">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/Roboto-Bold-webfont.woff">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/Roboto-BoldItalic-webfont.eot">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/Roboto-BoldItalic-webfont.svg">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/Roboto-BoldItalic-webfont.ttf">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/Roboto-BoldItalic-webfont.woff">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/Roboto-Italic-webfont.eot">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/Roboto-Italic-webfont.svg">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/Roboto-Italic-webfont.ttf">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/Roboto-Italic-webfont.woff">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/Roboto-Light-webfont.eot">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/Roboto-Light-webfont.svg">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/Roboto-Light-webfont.ttf">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/Roboto-Light-webfont.woff">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/Roboto-LightItalic-webfont.eot">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/Roboto-LightItalic-webfont.svg">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/Roboto-LightItalic-webfont.ttf">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/Roboto-LightItalic-webfont.woff">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/Roboto-Medium-webfont.eot">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/Roboto-Medium-webfont.svg">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/Roboto-Medium-webfont.ttf">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/Roboto-Medium-webfont.woff">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/Roboto-MediumItalic-webfont.eot">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/Roboto-MediumItalic-webfont.svg">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/Roboto-MediumItalic-webfont.ttf">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/Roboto-MediumItalic-webfont.woff">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/Roboto-Regular-webfont.eot">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/Roboto-Regular-webfont.svg">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/Roboto-Regular-webfont.ttf">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/Roboto-Regular-webfont.woff">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/Roboto-Thin-webfont.eot">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/Roboto-Thin-webfont.svg">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/Roboto-Thin-webfont.ttf">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/Roboto-Thin-webfont.woff">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/Roboto-ThinItalic-webfont.eot">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/Roboto-ThinItalic-webfont.svg">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/Roboto-ThinItalic-webfont.ttf">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/Roboto-ThinItalic-webfont.woff">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/RobotoCondensed-Bold-webfont.eot">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/RobotoCondensed-Bold-webfont.svg">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/RobotoCondensed-Bold-webfont.ttf">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/RobotoCondensed-Bold-webfont.woff">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/RobotoCondensed-BoldItalic-webfont.eot">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/RobotoCondensed-BoldItalic-webfont.svg">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/RobotoCondensed-BoldItalic-webfont.ttf">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/RobotoCondensed-BoldItalic-webfont.woff">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/RobotoCondensed-Italic-webfont.eot">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/RobotoCondensed-Italic-webfont.svg">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/RobotoCondensed-Italic-webfont.ttf">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/RobotoCondensed-Italic-webfont.woff">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/RobotoCondensed-Light-webfont.eot">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/RobotoCondensed-Light-webfont.svg">
+      <publishTime>07/05/2017 17:00:15</publishTime>
+    </File>
+    <File Include="HTML/fonts/RobotoCondensed-Light-webfont.ttf">
+      <publishTime>07/05/2017 17:00:16</publishTime>
+    </File>
+    <File Include="HTML/fonts/RobotoCondensed-Light-webfont.woff">
+      <publishTime>07/05/2017 17:00:16</publishTime>
+    </File>
+    <File Include="HTML/fonts/RobotoCondensed-LightItalic-webfont.eot">
+      <publishTime>07/05/2017 17:00:16</publishTime>
+    </File>
+    <File Include="HTML/fonts/RobotoCondensed-LightItalic-webfont.svg">
+      <publishTime>07/05/2017 17:00:16</publishTime>
+    </File>
+    <File Include="HTML/fonts/RobotoCondensed-LightItalic-webfont.ttf">
+      <publishTime>07/05/2017 17:00:16</publishTime>
+    </File>
+    <File Include="HTML/fonts/RobotoCondensed-LightItalic-webfont.woff">
+      <publishTime>07/05/2017 17:00:16</publishTime>
+    </File>
+    <File Include="HTML/fonts/RobotoCondensed-Regular-webfont.eot">
+      <publishTime>07/05/2017 17:00:16</publishTime>
+    </File>
+    <File Include="HTML/fonts/RobotoCondensed-Regular-webfont.svg">
+      <publishTime>07/05/2017 17:00:16</publishTime>
+    </File>
+    <File Include="HTML/fonts/RobotoCondensed-Regular-webfont.ttf">
+      <publishTime>07/05/2017 17:00:16</publishTime>
+    </File>
+    <File Include="HTML/fonts/RobotoCondensed-Regular-webfont.woff">
+      <publishTime>07/05/2017 17:00:16</publishTime>
+    </File>
+    <File Include="HTML/fonts/websymbols-regular-webfont.eot">
+      <publishTime>07/05/2017 17:00:16</publishTime>
+    </File>
+    <File Include="HTML/fonts/websymbols-regular-webfont.svg">
+      <publishTime>07/05/2017 17:00:16</publishTime>
+    </File>
+    <File Include="HTML/fonts/websymbols-regular-webfont.ttf">
+      <publishTime>07/05/2017 17:00:16</publishTime>
+    </File>
+    <File Include="HTML/fonts/websymbols-regular-webfont.woff">
+      <publishTime>07/05/2017 17:00:16</publishTime>
+    </File>
+    <File Include="HTML/images/logo-inside-mini.jpg">
+      <publishTime>07/05/2017 17:00:16</publishTime>
+    </File>
+    <File Include="HTML/images/logo-inside.jpg">
+      <publishTime>07/05/2017 17:00:16</publishTime>
+    </File>
+    <File Include="HTML/images/logo.png">
+      <publishTime>07/05/2017 17:00:16</publishTime>
+    </File>
+    <File Include="HTML/images/users/user-96x96.jpg">
+      <publishTime>07/05/2017 17:00:16</publishTime>
+    </File>
+    <File Include="HTML/images/users/user-image.png">
+      <publishTime>07/05/2017 17:00:16</publishTime>
+    </File>
+    <File Include="HTML/javascripts/app.min.js">
+      <publishTime>07/05/2017 17:00:16</publishTime>
+    </File>
+    <File Include="HTML/javascripts/bootstrap.min.js">
+      <publishTime>07/05/2017 17:00:16</publishTime>
+    </File>
+    <File Include="HTML/javascripts/custom.js">
+      <publishTime>07/05/2017 17:00:16</publishTime>
+    </File>
+    <File Include="HTML/javascripts/demo.js">
+      <publishTime>07/05/2017 17:00:16</publishTime>
+    </File>
+    <File Include="HTML/javascripts/jquery-migrate.min.js">
+      <publishTime>07/05/2017 17:00:16</publishTime>
+    </File>
+    <File Include="HTML/javascripts/jquery.mCustomScrollbar.js">
+      <publishTime>07/05/2017 17:00:16</publishTime>
+    </File>
+    <File Include="HTML/javascripts/jquery.min.js">
+      <publishTime>07/05/2017 17:00:16</publishTime>
+    </File>
+    <File Include="HTML/javascripts/jquery.slides.min.custom.js">
+      <publishTime>07/05/2017 17:00:16</publishTime>
+    </File>
+    <File Include="HTML/javascripts/modernizr-custom.js">
+      <publishTime>07/05/2017 17:00:16</publishTime>
+    </File>
+    <File Include="HTML/javascripts/searchfilter.js">
+      <publishTime>07/05/2017 17:00:16</publishTime>
+    </File>
+    <File Include="HTML/landing-page.html">
+      <publishTime>07/05/2017 17:53:53</publishTime>
+    </File>
+    <File Include="HTML/login.html">
+      <publishTime>07/05/2017 17:00:16</publishTime>
+    </File>
+    <File Include="HTML/stylesheets/AdminLTE.css">
+      <publishTime>07/05/2017 17:00:16</publishTime>
+    </File>
+    <File Include="HTML/stylesheets/bootstrap-theme.min.css">
+      <publishTime>07/05/2017 17:00:16</publishTime>
+    </File>
+    <File Include="HTML/stylesheets/bootstrap.min.css">
+      <publishTime>07/05/2017 17:00:16</publishTime>
+    </File>
+    <File Include="HTML/stylesheets/font-awesome.min.css">
+      <publishTime>07/05/2017 17:00:16</publishTime>
+    </File>
+    <File Include="HTML/stylesheets/jquery.mCustomScrollbar.css">
+      <publishTime>07/05/2017 17:00:16</publishTime>
+    </File>
+    <File Include="HTML/stylesheets/screen.css">
+      <publishTime>07/05/2017 17:00:16</publishTime>
+    </File>
+    <File Include="HTML/stylesheets/skin/_all-skins.min.css">
+      <publishTime>07/05/2017 17:00:16</publishTime>
+    </File>
+    <File Include="HTML/welcome-page.html">
+      <publishTime>07/05/2017 18:20:44</publishTime>
+    </File>
+    <File Include="images/logo-inside-mini.jpg">
+      <publishTime>07/05/2017 17:05:04</publishTime>
+    </File>
+    <File Include="images/logo-inside.jpg">
+      <publishTime>07/05/2017 17:05:04</publishTime>
+    </File>
+    <File Include="images/logo.png">
+      <publishTime>07/05/2017 17:05:04</publishTime>
+    </File>
+    <File Include="images/page-loader.gif">
+      <publishTime>07/05/2017 17:38:59</publishTime>
+    </File>
+    <File Include="images/users/user-96x96.jpg">
+      <publishTime>07/05/2017 17:05:04</publishTime>
+    </File>
+    <File Include="images/users/user-image.png">
+      <publishTime>07/05/2017 17:05:04</publishTime>
+    </File>
+    <File Include="javascripts/app.min.js">
+      <publishTime>07/05/2017 17:02:01</publishTime>
+    </File>
+    <File Include="javascripts/bootstrap.min.js">
+      <publishTime>07/05/2017 17:02:01</publishTime>
+    </File>
+    <File Include="javascripts/custom.js">
+      <publishTime>07/05/2017 17:02:01</publishTime>
+    </File>
+    <File Include="javascripts/demo.js">
+      <publishTime>07/05/2017 17:02:01</publishTime>
+    </File>
+    <File Include="javascripts/jquery-migrate.min.js">
+      <publishTime>07/05/2017 17:02:01</publishTime>
+    </File>
+    <File Include="javascripts/jquery.mCustomScrollbar.js">
+      <publishTime>07/05/2017 17:02:01</publishTime>
+    </File>
+    <File Include="javascripts/jquery.min.js">
+      <publishTime>07/05/2017 17:02:01</publishTime>
+    </File>
+    <File Include="javascripts/jquery.slides.min.custom.js">
+      <publishTime>07/05/2017 17:02:01</publishTime>
+    </File>
+    <File Include="javascripts/modernizr-custom.js">
+      <publishTime>07/05/2017 17:02:01</publishTime>
+    </File>
+    <File Include="javascripts/searchfilter.js">
+      <publishTime>07/05/2017 17:02:01</publishTime>
+    </File>
+    <File Include="js/login.js">
+      <publishTime>07/05/2017 18:31:44</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>07/05/2017 16:52:29</publishTime>
+    </File>
+    <File Include="Scripts/ai.0.22.9-build00167.js">
+      <publishTime>07/05/2017 16:52:29</publishTime>
+    </File>
+    <File Include="Scripts/ai.0.22.9-build00167.min.js">
+      <publishTime>07/05/2017 16:52:29</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>07/05/2017 16:52:02</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>07/05/2017 16:52:02</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>07/05/2017 16:52:03</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>07/05/2017 16:52:03</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>07/05/2017 16:52:03</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>07/05/2017 16:52:09</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>07/05/2017 16:52:09</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>07/05/2017 16:52:09</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>07/05/2017 16:52:09</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>07/05/2017 16:52:07</publishTime>
+    </File>
+    <File Include="Scripts/respond.js">
+      <publishTime>07/05/2017 16:52:08</publishTime>
+    </File>
+    <File Include="Scripts/respond.min.js">
+      <publishTime>07/05/2017 16:52:08</publishTime>
+    </File>
+    <File Include="Scripts/_references.js">
+      <publishTime>07/05/2017 17:29:04</publishTime>
+    </File>
+    <File Include="stylesheets/AdminLTE.css">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="stylesheets/bootstrap-theme.min.css">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="stylesheets/bootstrap.min.css">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="stylesheets/font-awesome.min.css">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="stylesheets/jquery.mCustomScrollbar.css">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="stylesheets/screen.css">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="stylesheets/skin/_all-skins.min.css">
+      <publishTime>07/05/2017 17:02:08</publishTime>
+    </File>
+    <File Include="Views/Account/ConfirmEmail.cshtml">
+      <publishTime>07/05/2017 16:52:12</publishTime>
+    </File>
+    <File Include="Views/Account/ExternalLoginConfirmation.cshtml">
+      <publishTime>07/05/2017 16:52:12</publishTime>
+    </File>
+    <File Include="Views/Account/ExternalLoginFailure.cshtml">
+      <publishTime>07/05/2017 16:52:12</publishTime>
+    </File>
+    <File Include="Views/Account/ForgotPassword.cshtml">
+      <publishTime>07/05/2017 16:52:12</publishTime>
+    </File>
+    <File Include="Views/Account/ForgotPasswordConfirmation.cshtml">
+      <publishTime>07/05/2017 16:52:12</publishTime>
+    </File>
+    <File Include="Views/Account/Login.cshtml">
+      <publishTime>07/05/2017 16:52:12</publishTime>
+    </File>
+    <File Include="Views/Account/Register.cshtml">
+      <publishTime>07/05/2017 16:52:12</publishTime>
+    </File>
+    <File Include="Views/Account/ResetPassword.cshtml">
+      <publishTime>07/05/2017 16:52:12</publishTime>
+    </File>
+    <File Include="Views/Account/ResetPasswordConfirmation.cshtml">
+      <publishTime>07/05/2017 16:52:12</publishTime>
+    </File>
+    <File Include="Views/Account/SendCode.cshtml">
+      <publishTime>07/05/2017 16:52:12</publishTime>
+    </File>
+    <File Include="Views/Account/VerifyCode.cshtml">
+      <publishTime>07/05/2017 16:52:12</publishTime>
+    </File>
+    <File Include="Views/Account/_ExternalLoginsListPartial.cshtml">
+      <publishTime>07/05/2017 16:52:12</publishTime>
+    </File>
+    <File Include="Views/Classlink/Home.cshtml">
+      <publishTime>07/05/2017 18:39:40</publishTime>
+    </File>
+    <File Include="Views/Classlink/Index.cshtml">
+      <publishTime>07/05/2017 17:59:01</publishTime>
+    </File>
+    <File Include="Views/Classlink/login.cshtml">
+      <publishTime>07/05/2017 17:08:17</publishTime>
+    </File>
+    <File Include="Views/Classlink/MyFiles.cshtml">
+      <publishTime>07/05/2017 18:43:23</publishTime>
+    </File>
+    <File Include="Views/Home/About.cshtml">
+      <publishTime>07/05/2017 16:51:56</publishTime>
+    </File>
+    <File Include="Views/Home/Contact.cshtml">
+      <publishTime>07/05/2017 16:51:56</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>07/05/2017 16:51:56</publishTime>
+    </File>
+    <File Include="Views/Manage/AddPhoneNumber.cshtml">
+      <publishTime>07/05/2017 16:52:12</publishTime>
+    </File>
+    <File Include="Views/Manage/ChangePassword.cshtml">
+      <publishTime>07/05/2017 16:52:12</publishTime>
+    </File>
+    <File Include="Views/Manage/Index.cshtml">
+      <publishTime>07/05/2017 16:52:12</publishTime>
+    </File>
+    <File Include="Views/Manage/ManageLogins.cshtml">
+      <publishTime>07/05/2017 16:52:12</publishTime>
+    </File>
+    <File Include="Views/Manage/SetPassword.cshtml">
+      <publishTime>07/05/2017 16:52:12</publishTime>
+    </File>
+    <File Include="Views/Manage/VerifyPhoneNumber.cshtml">
+      <publishTime>07/05/2017 16:52:12</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>07/05/2017 16:52:11</publishTime>
+    </File>
+    <File Include="Views/Shared/Lockout.cshtml">
+      <publishTime>07/05/2017 16:52:12</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>07/05/2017 16:52:11</publishTime>
+    </File>
+    <File Include="Views/Shared/_LoginPartial.cshtml">
+      <publishTime>07/05/2017 16:52:13</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>07/05/2017 16:51:56</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>07/05/2017 16:51:56</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>07/05/2017 18:45:37</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
