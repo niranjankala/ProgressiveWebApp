@@ -13,7 +13,7 @@ c:\users\rahuldubey\documents\visual studio 2015\Classlink.UWA\bld\Debug\qualifi
 c:\users\rahuldubey\documents\visual studio 2015\Classlink.UWA\bld\Debug\qualifiers.txt.intermediate
 c:\users\rahuldubey\documents\visual studio 2015\Classlink.UWA\bld\Debug\MultipleQualifiersPerDimensionFound.txt
 c:\users\rahuldubey\documents\visual studio 2015\Classlink.UWA\bld\Debug\ProjectArchitectures.txt
-c:\users\rahuldubey\documents\visual studio 2015\Classlink.UWA\bin\Debug\resources.pri
+C:\Users\Rahuldubey\documents\visual studio 2015\Classlink.UWA\bin\Debug\ReverseMap\resources.pri
 C:\Users\Rahuldubey\Desktop\New folder (2)\Classlink.UWA\bin\Debug\ReverseMap\resources.pri
 C:\Users\Rahuldubey\Desktop\New folder (2)\Classlink.UWA\bin\Debug\AppxManifest.xml
 C:\Users\Rahuldubey\Desktop\New folder (2)\Classlink.UWA\bin\Debug\Classlink.UWA.build.appxrecipe

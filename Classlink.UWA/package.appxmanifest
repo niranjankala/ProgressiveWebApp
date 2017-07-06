@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity Name="774f901e-9a5b-417c-8f58-52a746903397" Version="1.0.0.0" Publisher="CN=Rahuldubey" />
+  <Identity Name="774f901e-9a5b-417c-8f58-52a746903397" Version="1.0.1.0" Publisher="CN=Rahuldubey" />
   <mp:PhoneIdentity PhoneProductId="774f901e-9a5b-417c-8f58-52a746903397" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>Classlink.UWA</DisplayName>
@@ -21,8 +21,8 @@
         <uap:SplashScreen Image="images\splashscreen.png" />
       </uap:VisualElements>
       <uap:ApplicationContentUriRules>
-        <uap:Rule Match="http://pwebapp.azurewebsites.net/*" Type="include" WindowsRuntimeAccess="all" />
-        <uap:Rule Match="http://pwebapp.azurewebsites.net/classlink/*" Type="include" WindowsRuntimeAccess="none" />
+        <uap:Rule Match="http://pwebapp.azurewebsites.net/" Type="include" WindowsRuntimeAccess="all" />
+        <uap:Rule Match="http://pwebapp.azurewebsites.net//Classlink/*" Type="include" WindowsRuntimeAccess="none" />
       </uap:ApplicationContentUriRules>
     </Application>
   </Applications>

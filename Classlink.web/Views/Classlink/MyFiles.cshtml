@@ -16,7 +16,6 @@
     <!--[if lte IE 9]>
     <script src="xdomain.js" slave="http://example.org/proxy.html"></script>
     <![endif]-->
-
     <!--Different Browser icon for All Devices -->
     <link href="favicon.ico?v=0.025920" rel="icon" type="image/x-icon">
     <!--IE Browser icon for All Devices -->
@@ -53,7 +52,7 @@
                 <div class="navbar-custom-menu">
                     <ul class="nav navbar-nav">
                         <li class="dropdown user user-menu">
-                            
+
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <img src="http://dlkf6mjgds3hc.cloudfront.net/clouddrive/2017/06/15/t1497541378-9f9a00d397946be66ed2579649b825ca/1497541378.png" class="user-image" alt="User Image"> <span class="hidden-xs">Gerard Pique (MIND)</span> <i> </i></a>
                             <ul class="dropdown-menu dropdown-menu-right">
                                 <li><a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i> My profile</a></li>
@@ -63,7 +62,7 @@
                         </li>
                         <!-- Control Sidebar Toggle Button -->
                         <li>
-                            <a href="/Classlink/Logout?Length=4"  title="Logout">
+                            <a href="/Classlink/Logout?Length=4" title="Logout">
                                 <i>
                                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 160 160" enable-background="new 0 0 160 160" xml:space="preserve">
                                     <g>
@@ -268,137 +267,89 @@
             <!-- Main content -->
             <section class="content">
                 <!--Row -->
-                <div class="row">
+                <div class="row" id="sidemenu">
+                    @*<!--Tiles-->
+                    <a href="##cloud" id="cloud"><div class="col-lg-3 col-md-3 col-sm-6 col-xs-6"> <div class="box box-default text-center cloud-drive"><div class="box-body"><h2 class="no-margin">Cloud Drive</h2><span class="icon-scope"><i><img src="~/images/icon/cloud.PNG" /> </i></span></div></div> </div> </a>
+                    <!--Ends Tiles-->
                     <!--Tiles-->
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="box box-default text-center cloud-drive">
-                            <!--Box Body -->
-                            <div class="box-body">
-                                <h2 class="no-margin">Cloud Drive</h2>
-                                <span class="icon-scope">
-                                    <i>
-                                        
-                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48px" height="48px" x="0px" y="0px"
-                                                 viewBox="0 0 160 160" style="enable-background:new 0 0 160 160;" xml:space="preserve">
-                                            <path class="icon-graphic" d="M127,130.2V98.8c7.8,0,28.2-9.4,28.2-47c0-26-21.1-47-47-47c-12.9,0-24.6,5.2-33.1,13.6
-                            C69.6,13.8,62.6,11,54.9,11c-17.3,0-31.4,14-31.4,31.4c0,2.4,0.3,4.7,0.8,6.9C13.1,51.8,4.8,61.8,4.8,73.7
-                            c0,13.9,11.2,25.1,25.1,25.1H33v31.4h37.6v6.3h-47v18.8h112.9v-18.8h-47v-6.3H127z M39.2,67.5h81.5v25.1H39.2V67.5z M44.3,61.2
-                            l9.4-6.3h52.6l9.4,6.3H44.3z M29.8,92.5C19.5,92.5,11,84.1,11,73.7c0-4.4,1.4-8.5,4.2-11.8c2.7-3.3,6.4-5.6,10.5-6.5l6.1-1.4
-                            l-1.4-6.1c-0.4-1.8-0.6-3.7-0.6-5.5c0-6.7,2.6-13,7.3-17.7c4.7-4.7,11-7.3,17.7-7.3c5.9,0,11.6,2.1,16.1,5.9l4.4,3.7l4.1-4
-                            C87.2,15.2,97.4,11,108.2,11c5.5,0,10.8,1.1,15.9,3.2c4.9,2.1,9.2,5,13,8.7c3.7,3.7,6.7,8.1,8.7,13c2.1,5,3.2,10.4,3.2,15.9
-                            c0,8.1-1,15.2-3,21.3c-1.6,4.9-3.9,9-6.7,12.3c-2.2,2.5-4.7,4.5-7.3,5.8c-2.1,1.1-4,1.4-4.9,1.4V61.2l-18.8-12.5H51.8L33,61.2v31.4
-                            H29.8z M39.2,98.8h81.5v25.1H39.2V98.8z M29.8,142.7h31.4v6.3H29.8V142.7z M130.2,149H98.8v-6.3h31.4V149z M92.5,142.7v6.3H67.5
-                            v-6.3h9.4v-12.5h6.3v12.5H92.5z" />
-                        </svg>
+                    <a href="##" id="onedrive">
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                            <div class="box box-default text-center windows">
+                                <!--Box Body -->
+                                <div class="box-body">
+                                    <span class="icon-scope">
+                                        <i>
 
-                                    </i>
-                                </span>
+                                            <img src="~/images/icon/onedrive.PNG" />
+                                        </i>
+                                    </span>
+                                </div>
+                                <!--Ends Box Body -->
                             </div>
-                            <!--Ends Box Body -->
                         </div>
-                    </div>
+                    </a>
                     <!--Ends Tiles-->
                     <!--Tiles-->
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="box box-default text-center windows">
-                            <!--Box Body -->
-                            <div class="box-body">
-                                <span class="icon-scope">
-                                    <i>
-                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48px" height="48px" x="0px" y="0px" viewBox="0 0 160 160" style="enable-background:new 0 0 160 160;" xml:space="preserve">
-                                        <g>
-                                        <path class="icon-graphic" d="M0.5,137.3l64.6,8.9V84.6H0.5V137.3z M0.5,137.3"></path>
-                                        <path class="icon-graphic" d="M0.5,76.6H65V14.2L0.5,23.1V76.6z M0.5,76.6"></path>
-                                        <path class="icon-graphic" d="M72.1,147.2L158,159V84.6H72.1V147.2z M72.1,147.2"></path>
-                                        <path class="icon-graphic" d="M72.1,13.3v63.3H158V1.4L72.1,13.3z M72.1,13.3"></path>
-                        </g>
-                        </svg>
-
-                                    </i>
-                                </span>
-                            </div>
-                            <!--Ends Box Body -->
-                        </div>
-                    </div>
-                    <!--Ends Tiles-->
-                    <!--Tiles-->
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="box box-default text-center google-drive">
-                            <!--Box Body -->
-                            <div class="box-body">
-                                <span class="icon-scope">
-                                    <i>
-                                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48px" height="48px" x="0px" y="0px"
-                                             viewBox="0 0 160 160" style="enable-background:new 0 0 160 160;" xml:space="preserve">
-<g>
-                                        <path class="icon-graphic" d="M152.4,97.3l-48.7-84.8h-48l48.7,84.8H152.4z M63.4,104.3l-24,42.4h92.5l24-42.4H63.4z M49.3,23.1L3.4,104.3l24,42.4
-		L74,65.5L49.3,23.1z M49.3,23.1" />
-</g>
-</svg>
-                                    </i>
-                                </span>
-                            </div>
-                            <!--Ends Box Body -->
-                        </div>
-                    </div>
-                    <!--Ends Tiles-->
-                    <!--Tiles-->
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="box box-default text-center dropbox">
-                            <!--Box Body -->
-                            <div class="box-body">
-                                <span class="icon-scope">
-                                    <i>
-                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48px" height="48px" x="0px" y="0px"
-                                             viewBox="-49 141 512 512" style="enable-background:new -49 141 512 512;" xml:space="preserve">
-                                        <g>
-                                        <path class="icon-graphic" d="M356.749,345.958l-143.956-87.624l90.812-75.173l143.956,88.626L356.749,345.958z M302.661,511.646l138.183-80.85
-                        l-83.173-70.423l-135.313,81.792L302.661,511.646z M191.647,442.165l-135.32-81.811l-83.114,70.423l138.183,80.828L191.647,442.165
-                        z M63.004,500.1v26l138.185,84.74V450.022l-91.698,75.158L63.004,500.1z M350.839,500.1l-46.271,25.057l-91.796-75.175v160.858
-                        l138.022-84.74L350.839,500.1z M201.208,258.334l-90.773-75.173l-143.995,88.626l90.891,74.152L201.208,258.334z M201.208,258.334" />
-                </g>
-                </svg>
-
-                                    </i>
-                                </span>
-                            </div>
-                            <!--Ends Box Body -->
-                        </div>
-                    </div>
-                    <!--Ends Tiles-->
-                    <!--Tiles-->
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="box box-default text-center ms-office">
-                            <!--Box Body -->
-                            <div class="box-body">
-                                <span class="icon-scope">
-                                    <i>
-                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48px" height="48px" x="0px" y="0px"
-                                             viewBox="-49 141 512 512" style="enable-background:new -49 141 512 512;" xml:space="preserve">
-                                        <polygon class="icon-graphic" points="90.841,502.686 7.054,539.818 7.054,254.182 256.51,159.921 268.888,159.921
-                    402.185,197.054 406.946,592.185 263.175,634.079 7.054,539.818 261.271,573.143 261.271,232.283 94.649,272.272 " />
-                </svg>
-
-                                    </i>
-                                </span>
-                            </div>
-                            <!--Ends Box Body -->
-                        </div>
-                    </div>
-                    <!--Ends Tiles-->
-                </div>
-                <!--Ends Row -->
-            </section>
-            <!-- Ends Main content -->
-        </div>
-        <!-- Ends Content Wrapper. Contains page content -->
-    </div>
+                    <a href="##gdrive" id="gdrive"><div class="col-lg-3 col-md-3 col-sm-6 col-xs-6"><div class="box box-default text-center google-drive"><div class="box-body"><span class="icon-scope"><i><img src="~/images/icon/gdrive.PNG" /></i> </span></div></div></div></a>
+                        <a href="#drop" id="drop"><div class="col-lg-3 col-md-3 col-sm-6 col-xs-6"><div class="box box-default text-center dropbox"><div class="box-body"><span class="icon-scope"><i> <img src="~/images/icon/drop.PNG" /></i></span></div> </div></div> </a>*@
+</div>
+                   </section>
+            </div>
     <!--Ends Wrapper Scope -->
     <script type="text/javascript" src="~/javascripts/jquery.min.js?v=0.1"></script>
     <script type="text/javascript" src="~/javascripts/jquery-migrate.min.js?v=0.1"></script>
     <script type="text/javascript" src="~/javascripts/bootstrap.min.js?v=0.1"></script>
     <script type="text/javascript" src="~/javascripts/custom.js?v=0.1"></script>
     <script type="text/javascript" src="~/javascripts/app.min.js?v=0.1"></script>
+    <script src="~/js/Myfile.js"></script>
+
+    <script>
+         $('#sidemenu').empty();
+       var append = '<a href="##" id="cloud" onclick="jump();"><div class="col-lg-3 col-md-3 col-sm-6 col-xs-6"> <div class="box box-default text-center cloud-drive"><div class="box-body"><h2 class="no-margin">Cloud Drive</h2><span class="icon-scope"><i><img src="../images/icon/cloud.PNG" /> </i></span></div></div> </div> </a>';
+       $('#sidemenu').append(append);
+
+        $(document).ready(function () {
+
+            var items;
+
+            $.ajax({
+
+                url: 'https://betanodeapi.classlink.com/myfiles/services',
+                type: 'GET',
+                dataType: 'json',
+                headers: {
+                    'gwstoken': localStorage.demo
+                },
+                contentType: 'application/x-www-form-urlencoded',
+
+
+                success: function (result) {
+
+                    addElementToLi(result);
+                   // parentfolders(localStorage.demo);
+                },
+                failure: function (response) {
+                    alert('failure');
+                },
+                error: function (error) {
+
+                    alert('error');
+                    return false;
+                    console.log('error', error);
+
+                }
+            });
+        });
+
+
+
+
+    </script>
+
+
+
+
+
 </body>
 </html>
 

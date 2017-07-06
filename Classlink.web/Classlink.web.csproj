@@ -286,6 +286,13 @@
     <Content Include="HTML\stylesheets\screen.css" />
     <Content Include="HTML\stylesheets\skin\_all-skins.min.css" />
     <Content Include="HTML\welcome-page.html" />
+    <Content Include="images\icon\cloud.PNG" />
+    <Content Include="images\icon\drop.PNG" />
+    <Content Include="images\icon\folder.png" />
+    <Content Include="images\icon\gdrive.PNG" />
+    <Content Include="images\icon\office365.PNG" />
+    <Content Include="images\icon\onedrive.PNG" />
+    <Content Include="images\icon\sky.PNG" />
     <Content Include="images\logo-inside-mini.jpg" />
     <Content Include="images\logo-inside.jpg" />
     <Content Include="images\logo.png" />
@@ -303,6 +310,7 @@
     <Content Include="javascripts\modernizr-custom.js" />
     <Content Include="javascripts\searchfilter.js" />
     <Content Include="js\login.js" />
+    <Content Include="js\Myfile.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Scripts\bootstrap.js" />

@@ -4,7 +4,7 @@
 "ResourceDimensions"		"language-en-US"
 
 [Files]
-"c:\users\rahuldubey\documents\visual studio 2015\Classlink.UWA\bld\Debug\split.pri"			"resources.pri"
+"C:\Users\Rahuldubey\documents\visual studio 2015\Classlink.UWA\bld\Debug\split.pri"			"resources.pri"
 "c:\users\rahuldubey\documents\visual studio 2015\Classlink.UWA\bld\Debug\PackageLayout\index.html"			"index.html"
 "c:\users\rahuldubey\documents\visual studio 2015\Classlink.UWA\bld\Debug\PackageLayout\js\main.js"			"js\main.js"
 "c:\users\rahuldubey\documents\visual studio 2015\Classlink.UWA\bld\Debug\PackageLayout\images\Wide310x150Logo.scale-200.png"			"images\Wide310x150Logo.scale-200.png"
