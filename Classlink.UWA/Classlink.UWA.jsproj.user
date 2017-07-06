@@ -6,4 +6,8 @@
     <AppxShowAllApps>False</AppxShowAllApps>
     <AppxBuildConfigurationSelection>neutral</AppxBuildConfigurationSelection>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebuggerFlavor>WindowsPhoneEmulatorDebugger</DebuggerFlavor>
+    <WindowsPhoneEmulatorID>DA831653-315E-41D9-BF63-CCCE346F4E9C;Mobile Emulator 10.0.14393.0 WVGA 4 inch 512MB</WindowsPhoneEmulatorID>
+  </PropertyGroup>
 </Project>
