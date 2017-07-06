@@ -13,215 +13,241 @@ btnlogin = document.getElementById('btnlogin')
 
 document.getElementById('btnlogin').addEventListener('click', function () {
 
-
-    if ($('#txtname').val().trim() == "") {
+    try
+    {
+        if ($('#txtname').val().trim() == "") {
         
-        $('#txtname').focus();
+            $('#txtname').focus();
 
-        return false;
-    }
-    else if ($('#txtpwd').val().trim() == "") {
+            return false;
+        }
+        else if ($('#txtpwd').val().trim() == "") {
         
-        $('#txtpwd').focus();
+            $('#txtpwd').focus();
 
-        return false;
-    }
-    else {
-        $(".loader").fadeIn();
-
-        if ($('#txtcode').val().trim() == "") {
-            generatedtokennonad();
+            return false;
         }
         else {
+            $(".loader").fadeIn();
+
+            if ($('#txtcode').val().trim() == "") {
+                generatedtokennonad();
+            }
+            else {
 
 
-            // GETTING API for AD USER
-            $.ajax({
-                url: 'https://betanodeapi.classlink.com/auth/userdn',
-                type: 'GET',
-                dataType: 'json',
-                headers: {
-                    'apikey': 'xxx-xxx-xxx'
-                },
-                contentType: 'application/json; charset=utf-8',
-                data: {
-                    //Passing data
-                    code: '' + $("#txtcode").val() + '',
-                    username: '' + $("#txtname").val() + ''
-                },
+                // GETTING API for AD USER
+                $.ajax({
+                    url: 'https://betanodeapi.classlink.com/auth/userdn',
+                    type: 'GET',
+                    dataType: 'json',
+                    headers: {
+                        'apikey': 'xxx-xxx-xxx'
+                    },
+                    contentType: 'application/json; charset=utf-8',
+                    data: {
+                        //Passing data
+                        code: '' + $("#txtcode").val() + '',
+                        username: '' + $("#txtname").val() + ''
+                    },
 
-                success: function (result) {
-                    autherizeUser(result.UserDomainList[0].DN);
-                    console.log(result);
+                    success: function (result) {
+                        autherizeUser(result.UserDomainList[0].DN);
+                        console.log(result);
 
 
-                },
-                error: function (error) {
+                    },
+                    error: function (error) {
                     
-                    console.log('error', error);
-                    $(".loader").fadeOut("slow");
-                }
-            });
+                        console.log('error1', error);
+                        $(".loader").fadeOut("slow");
+                    }
+                });
+            }
         }
+
     }
-
-
+    catch(exception)
+    {
+        console.log('error1', error);
+        console.log(exception);
+    }
 });
 
 
 //////////////////////////// Autherizing User for login process/////////////////////////
 
 function autherizeUser(DN) {
-    
-    $.ajax({
+    try{
+        $.ajax({
 
-        url: 'https://betanodeapi.classlink.com/auth',
-        type: 'POST',
-        dataType: 'json',
-        headers: {
-            'apikey': 'xxx-xxx-xxx'
-        },
-        contentType: 'application/x-www-form-urlencoded',
-        data: { //Passing data
+            url: 'https://betanodeapi.classlink.com/auth',
+            type: 'POST',
+            dataType: 'json',
+            headers: {
+                'apikey': 'xxx-xxx-xxx'
+            },
+            contentType: 'application/x-www-form-urlencoded',
+            data: { //Passing data
 
-            username: '' + $("#txtname").val() + '',
-            password: '' + $("#txtpwd").val() + '',
-            code: '' + $("#txtcode").val() + '',
-            userdn: DN
-        },
+                username: '' + $("#txtname").val() + '',
+                password: '' + $("#txtpwd").val() + '',
+                code: '' + $("#txtcode").val() + '',
+                userdn: DN
+            },
 
-        success: function (result) {
+            success: function (result) {
 
-            generatedtoken(result.AuthUserBasicDetail.GWSToken);
-            localStorage.demo = result.AuthUserBasicDetail.GWSToken;
-            console.log(result);
+                generatedtoken(result.AuthUserBasicDetail.GWSToken);
+                localStorage.demo = result.AuthUserBasicDetail.GWSToken;
+                console.log(result);
 
 
-        },
-        failure: function (response) {
-       
-            $(".loader").fadeOut("slow");
-        },
-        error: function (error) {
+            },
+            failure: function (response) {
+                console.log('failure2', response);
+                $(".loader").fadeOut("slow");
+            },
+            error: function (error) {
 
-            
-            console.log('error', error);
-            $(".loader").fadeOut("slow");
+                console.log('error2', error);
+              
+                $(".loader").fadeOut("slow");
 
-        }
-    });
+            }
+        });
+    }
+    catch(exception)
+    {
+        console.log('error2', error);
+        console.log(exception);
+    }
 }
 
 
 ///////////////////////////////// Genrating Tokken for login process////////////////////
 
 function generatedtoken(gwstoken) {
-    
-    $.ajax({
+    try{  
+        $.ajax({
 
-        url: 'https://betanodeapi.classlink.com/auth/configurationdata',
-        type: 'GET',
-        dataType: 'json',
-        headers: {
-            'gwstoken': gwstoken
-        },
-        contentType: 'application/json; charset=utf-8',
-
-
-        success: function (result) {
-
-            jump(result, gwstoken);
-
-        },
-        failure: function (response) {
-            console.log(result);
-            $(".loader").fadeOut("slow");
+            url: 'https://betanodeapi.classlink.com/auth/configurationdata',
+            type: 'GET',
+            dataType: 'json',
+            headers: {
+                'gwstoken': gwstoken
+            },
+            contentType: 'application/json; charset=utf-8',
 
 
-           
-        },
-        error: function (error) {
+            success: function (result) {
+
+                jump(result, gwstoken);
+
+            },
+            failure: function (response) {
+                //console.log(result);
+                console.log('failure3', response);
+                $(".loader").fadeOut("slow");
+
 
            
-            $(".loader").fadeOut("slow");
+            },
+            error: function (error) {
 
-        }
-    });
+                console.log('error3', error);
+                $(".loader").fadeOut("slow");
+
+            }
+        });
+    }
+    catch(ex)
+    {
+        console.log(ex);
+    }
 }
 
 
 ///////////////////////////////////for nonAD user///////////////////////////////////////
 
 function autherizeUsernonad() {
+    try{
+        $.ajax({
 
-    $.ajax({
+            url: 'https://betanodeapi.classlink.com/auth',
+            type: 'POST',
+            dataType: 'json',
+            headers: {
+                'apikey': 'xxx-xxx-xxx'
+            },
+            contentType: 'application/x-www-form-urlencoded',
+            data: { //Passing data
 
-        url: 'https://betanodeapi.classlink.com/auth',
-        type: 'POST',
-        dataType: 'json',
-        headers: {
-            'apikey': 'xxx-xxx-xxx'
-        },
-        contentType: 'application/x-www-form-urlencoded',
-        data: { //Passing data
+                username: '' + $("#txtname").val() + '',
+                password: '' + $("#txtpwd").val() + '',
+            },
 
-            username: '' + $("#txtname").val() + '',
-            password: '' + $("#txtpwd").val() + '',
-        },
+            success: function (result) {
 
-        success: function (result) {
+                generatedtoken(result.AuthUserBasicDetail.GWSToken);
+                console.log(result);
 
-            generatedtoken(result.AuthUserBasicDetail.GWSToken);
-            console.log(result);
-
-        },
-        failure: function (response) {
-
-            $(".loader").fadeOut("slow");
-        },
-        error: function (error) {
+            },
+            failure: function (response) {
+                console.log('failnonad1',response);
+                $(".loader").fadeOut("slow");
+            },
+            error: function (error) {
 
 
-            $(".loader").fadeOut("slow");
-            console.log('error', error);
+                $(".loader").fadeOut("slow");
+                console.log('errornonad1', error);
 
-        }
-    });
+            }
+        });
+    }
+    catch(ex){
+        console.log(ex);
+    }
 }
 
 /////////////////// Genrating Tokken for login process ////////////////////////////////
 
 function generatedtokennonad(gwstoken) {
+    try{
+        $.ajax({
 
-    $.ajax({
-
-        url: 'https://betanodeapi.classlink.com/auth/configurationdata',
-        type: 'GET',
-        dataType: 'json',
-        headers: {
-            'gwstoken': gwstoken
-        },
-        contentType: 'application/json; charset=utf-8',
-
-
-        success: function (result) {
-
-            jump(result, gwstoken);
-
-        },
-        failure: function (response) {
-            console.log(result);
-
-            $(".loader").fadeOut("slow");
-
-        },
-        error: function (error) {
+            url: 'https://betanodeapi.classlink.com/auth/configurationdata',
+            type: 'GET',
+            dataType: 'json',
+            headers: {
+                'gwstoken': gwstoken
+            },
+            contentType: 'application/json; charset=utf-8',
 
 
-            $(".loader").fadeOut("slow");
+            success: function (result) {
 
-        }
-    });
+                jump(result, gwstoken);
+
+            },
+            failure: function (response) {
+                console.log(result);
+                console.log('failure', response);
+                $(".loader").fadeOut("slow");
+
+            },
+            error: function (error) {
+
+                console.log('errornonad2', error);
+                $(".loader").fadeOut("slow");
+
+            }
+        });
+    }
+    catch(ex){
+        console.log(ex);
+    }
 }
 
 

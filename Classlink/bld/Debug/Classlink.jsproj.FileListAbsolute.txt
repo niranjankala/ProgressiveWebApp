@@ -1,0 +1,16 @@
+C:\Users\Rahuldubey\Desktop\New folder (2)\Classlink\bin\Debug\ReverseMap\resources.pri
+C:\Users\Rahuldubey\Desktop\New folder (2)\Classlink\bin\Debug\AppxManifest.xml
+C:\Users\Rahuldubey\Desktop\New folder (2)\Classlink\bin\Debug\Classlink.build.appxrecipe
+C:\Users\Rahuldubey\Desktop\New folder (2)\Classlink\bld\Debug\ResourceHandlingTask.state
+C:\Users\Rahuldubey\Desktop\New folder (2)\Classlink\bld\Debug\priconfig.xml
+C:\Users\Rahuldubey\Desktop\New folder (2)\Classlink\bld\Debug\priconfig.xml.intermediate
+C:\Users\Rahuldubey\Desktop\New folder (2)\Classlink\bld\Debug\layout.resfiles
+C:\Users\Rahuldubey\Desktop\New folder (2)\Classlink\bld\Debug\layout.resfiles.intermediate
+C:\Users\Rahuldubey\Desktop\New folder (2)\Classlink\bld\Debug\resources.resfiles
+C:\Users\Rahuldubey\Desktop\New folder (2)\Classlink\bld\Debug\resources.resfiles.intermediate
+C:\Users\Rahuldubey\Desktop\New folder (2)\Classlink\bld\Debug\pri.resfiles
+C:\Users\Rahuldubey\Desktop\New folder (2)\Classlink\bld\Debug\pri.resfiles.intermediate
+C:\Users\Rahuldubey\Desktop\New folder (2)\Classlink\bld\Debug\qualifiers.txt
+C:\Users\Rahuldubey\Desktop\New folder (2)\Classlink\bld\Debug\qualifiers.txt.intermediate
+C:\Users\Rahuldubey\Desktop\New folder (2)\Classlink\bld\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Rahuldubey\Desktop\New folder (2)\Classlink\bld\Debug\ProjectArchitectures.txt
