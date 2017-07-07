@@ -16,13 +16,26 @@ document.getElementById('btnlogin').addEventListener('click', function () {
     try
     {
         if ($('#txtname').val().trim() == "") {
-        
+            if ('Windows' in window) {
+                var msgBox = new Windows.UI.Popups.MessageDialog('Enter Name');
+                msgBox.showAsync();
+            }
+            else
+            {
+                alert('Enter Name')
+            }
             $('#txtname').focus();
 
             return false;
         }
         else if ($('#txtpwd').val().trim() == "") {
-        
+            if ('Windows' in window) {
+                var msgBox = new Windows.UI.Popups.MessageDialog('Enter Password');
+                msgBox.showAsync();
+            }
+            else {
+                alert('Enter Password')
+            }
             $('#txtpwd').focus();
 
             return false;
@@ -53,10 +66,15 @@ document.getElementById('btnlogin').addEventListener('click', function () {
                     },
 
                     success: function (result) {
-                        debugger;
+               
                         if (result.ResultCode == 0) {
-                            var msgBox = new Windows.UI.Popups.MessageDialog(message);
-                            msgBox.showAsync();
+                            if ('Windows' in window) {
+                                var msgBox = new Windows.UI.Popups.MessageDialog(result.ResultDescription);
+                                msgBox.showAsync();
+                            }
+                            else {
+                                alert(result.ResultDescription);
+                            }
                         }
                         else {
                             autherizeUser(result.UserDomainList[0].DN);

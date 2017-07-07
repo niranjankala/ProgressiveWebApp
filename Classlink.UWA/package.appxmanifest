@@ -14,15 +14,15 @@
     <Resource Language="x-generate" />
   </Resources>
   <Applications>
-    <Application Id="App" StartPage="http://pwebapp.azurewebsites.net/">
+    <Application Id="App" StartPage="http://localhost:54190/">
       <uap:VisualElements DisplayName="Classlink" Description="Classlink.UWA" BackgroundColor="transparent" Square150x150Logo="images\Square150x150Logo.png" Square44x44Logo="images\Square44x44Logo.png">
         <uap:DefaultTile Wide310x150Logo="images\Wide310x150Logo.png">
         </uap:DefaultTile>
         <uap:SplashScreen Image="images\splashscreen.png" />
       </uap:VisualElements>
       <uap:ApplicationContentUriRules>
-        <uap:Rule Match="http://pwebapp.azurewebsites.net/" Type="include" WindowsRuntimeAccess="all" />
-        <uap:Rule Match="http://pwebapp.azurewebsites.net//Classlink/*" Type="include" WindowsRuntimeAccess="none" />
+        <uap:Rule Match="http://localhost:54190/" Type="include" WindowsRuntimeAccess="all" />
+        <uap:Rule Match="http://localhost:54190//Classlink/*" Type="include" WindowsRuntimeAccess="none" />
       </uap:ApplicationContentUriRules>
     </Application>
   </Applications>

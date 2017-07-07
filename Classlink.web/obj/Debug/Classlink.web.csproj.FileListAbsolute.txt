@@ -243,4 +243,3 @@ C:\Users\Rahuldubey\Desktop\New folder (2)\Classlink.web\bin\Microsoft.Owin.Secu
 C:\Users\Rahuldubey\Desktop\New folder (2)\Classlink.web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\Rahuldubey\Desktop\New folder (2)\Classlink.web\obj\Debug\Classlink.web.dll
 C:\Users\Rahuldubey\Desktop\New folder (2)\Classlink.web\obj\Debug\Classlink.web.pdb
-C:\Users\Rahuldubey\Desktop\New folder (2)\Classlink.web\obj\Debug\Classlink.web.csprojResolveAssemblyReference.cache
