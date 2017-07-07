@@ -981,12 +981,6 @@ table .nav .open>a, table .nav .open>a:focus, table .nav .open>a:hover {
 .login-page-scope .btn-map i .map-graphic {
 	fill: #fff
 }
-.login-page-scope .artboard-scope {
-	/*background-color: #00b4c5;*/
-	height: auto;
-	margin: 0 auto;
-	max-width: 395px
-}
 .login-page-scope .artboard-scope:after {
 	clear: both;
 	float: none;
@@ -998,6 +992,47 @@ table .nav .open>a, table .nav .open>a:focus, table .nav .open>a:hover {
 	height: 0;
 	line-height: 0;
 	width: 100%
+}
+.login-page-scope .artboard-scope {
+	/*background-color: #00b4c5;*/
+	height: auto;
+	margin: 0 auto;
+	max-width: 395px;
+	width:auto;
+}
+@media only screen and (max-height:520px) and (min-width:401px) {
+	.login-page-scope .artboard-scope {
+		/*background-color: #00b4c5;*/
+		height: auto;
+		left:inherit;
+		margin:0 auto;
+		position:static;
+		top:0;
+		width:400px;
+	}
+}
+@media only screen and (min-height:521px) and (max-width:400px) {
+	.login-page-scope .artboard-scope {
+		/*background-color: #00b4c5;*/
+		height: 520px;
+		left:0;
+		margin:-260px 0 0 0;
+		position:absolute;
+		top:50%;
+		width:100%;
+	}
+}
+
+@media only screen and (min-height:521px) and (min-width:401px) {
+	.login-page-scope .artboard-scope {
+		/*background-color: #00b4c5;*/
+		height: 520px;
+		left:50%;
+		margin:-260px 0 0 -200px;
+		position:absolute;
+		top:50%;
+		width:400px;
+	}
 }
 
 /*@media only screen and (min-width:641px) {
@@ -1020,16 +1055,16 @@ table .nav .open>a, table .nav .open>a:focus, table .nav .open>a:hover {
 }*/
 
 @media only screen and (max-width:980px) and (min-height:649px) {
-.login-page-scope .artboard-scope {
+/*.login-page-scope .artboard-scope {
 	height: 632px;
 	margin: 0
-}
+}*/
 }
 
 @media only screen and (max-width:640px) and (min-height:648px) {
-.login-page-scope .artboard-scope {
+/*.login-page-scope .artboard-scope {
 	height: auto
-}
+}*/
 }
 .login-page-scope .artboard-scope .left-document-scope {
 	color: #fff;
@@ -1246,6 +1281,7 @@ table .nav .open>a, table .nav .open>a:focus, table .nav .open>a:hover {
 	border-color: #edc200;
 	text-decoration: none
 }
+
 .login-page-scope .artboard-scope .right-form-scope .login-scope {
 	background-color: #35abcd;
 	-moz-background-clip: padding;
@@ -1258,7 +1294,7 @@ table .nav .open>a, table .nav .open>a:focus, table .nav .open>a:hover {
 	-ms-box-shadow: 0 0 10px 1px rgba(0,0,0,.1);
 	-o-box-shadow: 0 0 10px 1px rgba(0,0,0,.1);
 	box-shadow: 0 0 10px 1px rgba(0,0,0,.1);
-	padding: 1.5em
+	padding: 1.5em;
 }
 .login-page-scope .artboard-scope .right-form-scope .login-scope:after {
 	clear: both;
@@ -6039,7 +6075,8 @@ table .nav .open>a, table .nav .open>a:focus, table .nav .open>a:hover {
 .box-body h2 a							{font-size:18px; color:#414042}
 .box-body h2 a:hover					{text-decoration:none; color:#f88528}
 .box-body .icon-scope 					{width:64px; height:64px; margin:.75em auto; display:block;}
-.box-body .icon-scope i 				{position: absolute; margin: 22px 18px; width: 36px; height: 36px; display: block;}
+.box-body .icon-scope i 				{position: absolute; margin: 22px 6px; width: 48px; height: 48px; display: block;}
+.box-body .icon-scope svg 				{display:block;}
 .box-body .icon-scope .icon-graphic 	{fill:#fff;}
 
 .box.draft .icon-scope						{background-color:#f88528;}
@@ -6113,7 +6150,43 @@ h2.box-title a 									{color:#414042}
 .login-scope .social-signin ul li:hover .social-graphic
 													{fill:#fff;}	
 .welcome-wrapper 									{background-color:#16a1a5 !important;}
-.welcome-wrapper .welcome-wrapper-body  			{position:fixed; top:25%; left:39%; text-align:center; width:280px; color:#fff;}
+.welcome-wrapper .welcome-wrapper-body  			{color:#fff; height:auto; text-align:center;}
+
+
+@media only screen and (max-height:336px) and (min-width:281px) {
+	.welcome-wrapper .welcome-wrapper-body {
+		/*background-color: #00b4c5;*/
+		height: auto;
+		left:inherit;
+		margin:0 auto;
+		position:static;
+		top:0;
+		width:280px;
+	}
+}
+@media only screen and (min-height:337px) and (max-width:280px) {
+	.welcome-wrapper .welcome-wrapper-body {
+		/*background-color: #00b4c5;*/
+		height: 336px;
+		left:0;
+		margin:-168px 0 0 0;
+		position:absolute;
+		top:50%;
+		width:100%;
+	}
+}
+
+@media only screen and (min-height:337px) and (min-width:281px) {
+	.welcome-wrapper .welcome-wrapper-body {
+		/*background-color: #00b4c5;*/
+		height: 336px;
+		left:50%;
+		margin:-168px 0 0 -140px;
+		position:absolute;
+		top:50%;
+		width:280px;
+	}
+}
 .welcome-wrapper .welcome-wrapper-body p 			{margin:0;}	
 .welcome-wrapper .welcome-wrapper-body h1 			{font-size:24px;margin:0 0 .5em;}
 .welcome-wrapper .btn-primary.bg-white 				{background-color:#fff; border-color:#fff; color:#35abcd; width:100%; margin:3em 0 0 0}
