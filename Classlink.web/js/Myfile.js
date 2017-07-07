@@ -170,8 +170,9 @@ function childfolders(result1) {
                 }
                 if (result.response[i].type == '1')
                 {
-                    var append = '<a href="#' + result.response[i].id + '" id="' + result.response[i].id + '" onclick="childfolders(' + result.response[i].id + ')" ><div class="col-lg-3 col-md-3 col-sm-6 col-xs-6"><div class="box box-default text-center google-drive" style="background-color: #afb5bd;"><div class="box-body"><h2 class="no-margin">' + foldername + '</h2><span class="icon-scope"><i><img style="max-width: 55px" src="../images/icon/exeicon.png" /></i> </span></div></div></div></a>';
+                    var append = '<a href="#' + result.response[i].id + '" id="' + result.response[i].id + '"  ><div class="col-lg-3 col-md-3 col-sm-6 col-xs-6"><div class="box box-default text-center google-drive" style="background-color: #afb5bd;"><div class="box-body"><h2 class="no-margin">' + foldername + '</h2><span class="icon-scope"><i><img style="max-width: 55px" src="../images/icon/exeicon.png" /></i> </span></div></div></div></a>';
                     $('#sidemenu').append(append);
+                   // onclick = "childfolders(' + result.response[i].id + ')"
                 }
 
             }
