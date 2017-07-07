@@ -1,2 +1,4 @@
 .vs
 bin
+*.user
+/Classlink.Dashboard.PWA/*.user
