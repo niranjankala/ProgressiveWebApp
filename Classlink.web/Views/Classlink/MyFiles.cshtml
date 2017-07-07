@@ -39,6 +39,13 @@
     <script type="text/javascript" src="javascripts/modernizr-custom.js"></script>
     <![endif]-->
     <!--Ends Script -->
+    <style>
+        a img {
+    border: none;
+    text-decoration: none;
+    margin-left: -20%;
+}
+    </style>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
     <!--Wrapper Scope -->
@@ -132,7 +139,7 @@
                             </i> <span>My apps</span>
                         </a>
                     </li>
-                    <li class="active">
+                    <li class="active" id="My Files">
                         <a href="#">
                             <i class="icon-object">
                                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px" x="0px" y="0px"
@@ -265,45 +272,50 @@
         <!-- Content Wrapper -->
         <div class="content-wrapper myfiles-wrapper">
             <!-- Main content -->
+           <!--backbutton-->
+            <div id="backdiv">
+                <a href="#" style="margin:1%;" id="parent" onclick="parentclick()" >Back </a>
+            </div>
+
             <section class="content">
                 <!--Row -->
                 <div class="row" id="sidemenu">
                     @*<!--Tiles-->
-                    <a href="##cloud" id="cloud"><div class="col-lg-3 col-md-3 col-sm-6 col-xs-6"> <div class="box box-default text-center cloud-drive"><div class="box-body"><h2 class="no-margin">Cloud Drive</h2><span class="icon-scope"><i><img src="~/images/icon/cloud.PNG" /> </i></span></div></div> </div> </a>
-                    <!--Ends Tiles-->
-                    <!--Tiles-->
-                    <a href="##" id="onedrive">
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                            <div class="box box-default text-center windows">
-                                <!--Box Body -->
-                                <div class="box-body">
-                                    <span class="icon-scope">
-                                        <i>
+                        <a href="##cloud" id="cloud"><div class="col-lg-3 col-md-3 col-sm-6 col-xs-6"> <div class="box box-default text-center cloud-drive"><div class="box-body"><h2 class="no-margin">Cloud Drive</h2><span class="icon-scope"><i><img src="~/images/icon/cloud.PNG" /> </i></span></div></div> </div> </a>
+                        <!--Ends Tiles-->
+                        <!--Tiles-->
+                        <a href="##" id="onedrive">
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                                <div class="box box-default text-center windows">
+                                    <!--Box Body -->
+                                    <div class="box-body">
+                                        <span class="icon-scope">
+                                            <i>
 
-                                            <img src="~/images/icon/onedrive.PNG" />
-                                        </i>
-                                    </span>
+                                                <img src="~/images/icon/onedrive.PNG" />
+                                            </i>
+                                        </span>
+                                    </div>
+                                    <!--Ends Box Body -->
                                 </div>
-                                <!--Ends Box Body -->
                             </div>
-                        </div>
-                    </a>
-                    <!--Ends Tiles-->
-                    <!--Tiles-->
-                    <a href="##gdrive" id="gdrive"><div class="col-lg-3 col-md-3 col-sm-6 col-xs-6"><div class="box box-default text-center google-drive"><div class="box-body"><span class="icon-scope"><i><img src="~/images/icon/gdrive.PNG" /></i> </span></div></div></div></a>
-                        <a href="#drop" id="drop"><div class="col-lg-3 col-md-3 col-sm-6 col-xs-6"><div class="box box-default text-center dropbox"><div class="box-body"><span class="icon-scope"><i> <img src="~/images/icon/drop.PNG" /></i></span></div> </div></div> </a>*@
-</div>
-                   </section>
-            </div>
-    <!--Ends Wrapper Scope -->
-    <script type="text/javascript" src="~/javascripts/jquery.min.js?v=0.1"></script>
-    <script type="text/javascript" src="~/javascripts/jquery-migrate.min.js?v=0.1"></script>
-    <script type="text/javascript" src="~/javascripts/bootstrap.min.js?v=0.1"></script>
-    <script type="text/javascript" src="~/javascripts/custom.js?v=0.1"></script>
-    <script type="text/javascript" src="~/javascripts/app.min.js?v=0.1"></script>
-    <script src="~/js/Myfile.js"></script>
+                        </a>
+                        <!--Ends Tiles-->
+                        <!--Tiles-->
+                        <a href="##gdrive" id="gdrive"><div class="col-lg-3 col-md-3 col-sm-6 col-xs-6"><div class="box box-default text-center google-drive"><div class="box-body"><span class="icon-scope"><i><img src="~/images/icon/gdrive.PNG" /></i> </span></div></div></div></a>
+                            <a href="#drop" id="drop"><div class="col-lg-3 col-md-3 col-sm-6 col-xs-6"><div class="box box-default text-center dropbox"><div class="box-body"><span class="icon-scope"><i> <img src="~/images/icon/drop.PNG" /></i></span></div> </div></div> </a>*@
+                </div>
+            </section>
+        </div>
+        <!--Ends Wrapper Scope -->
+        <script type="text/javascript" src="~/javascripts/jquery.min.js?v=0.1"></script>
+        <script type="text/javascript" src="~/javascripts/jquery-migrate.min.js?v=0.1"></script>
+        <script type="text/javascript" src="~/javascripts/bootstrap.min.js?v=0.1"></script>
+        <script type="text/javascript" src="~/javascripts/custom.js?v=0.1"></script>
+        <script type="text/javascript" src="~/javascripts/app.min.js?v=0.1"></script>
+        <script src="~/js/Myfile.js"></script>
 
-    <script>
+        <script>
          $('#sidemenu').empty();
        var append = '<a href="##" id="cloud" onclick="jump();"><div class="col-lg-3 col-md-3 col-sm-6 col-xs-6"> <div class="box box-default text-center cloud-drive"><div class="box-body"><h2 class="no-margin">Cloud Drive</h2><span class="icon-scope"><i><img src="../images/icon/cloud.PNG" /> </i></span></div></div> </div> </a>';
        $('#sidemenu').append(append);
@@ -344,9 +356,73 @@
 
 
 
-    </script>
+        </script>
+
+        <script>
+            $(".sidebar li").on('click', function () {
+             
+                var id = this.id;
+                if(id.trim() !=null)
+                {
+                   
+                    if (id == "My Files") {
+                        jumpparent()
+                    }
+                }
+            });
 
 
+
+            function parentclick() {
+              
+                    jumpparent();
+              
+            }
+                
+
+            function jumpparent()
+            {
+               
+                        $('#sidemenu').empty();
+                        var append = '<a href="##" id="cloud" onclick="jump();"><div class="col-lg-3 col-md-3 col-sm-6 col-xs-6"> <div class="box box-default text-center cloud-drive"><div class="box-body"><h2 class="no-margin">Cloud Drive</h2><span class="icon-scope"><i><img src="../images/icon/cloud.PNG" /> </i></span></div></div> </div> </a>';
+                        $('#sidemenu').append(append);
+
+                        $(document).ready(function () {
+
+                            var items;
+
+                            $.ajax({
+
+                                url: 'https://betanodeapi.classlink.com/myfiles/services',
+                                type: 'GET',
+                                dataType: 'json',
+                                headers: {
+                                    'gwstoken': localStorage.demo
+                                },
+                                contentType: 'application/x-www-form-urlencoded',
+
+
+                                success: function (result) {
+
+                                    addElementToLi(result);
+                                    // parentfolders(localStorage.demo);
+                                },
+                                failure: function (response) {
+                                    alert('failure');
+                                },
+                                error: function (error) {
+
+                                    alert('error');
+                                    return false;
+                                    console.log('error', error);
+
+                                }
+                            });
+                        });
+               
+             
+            }
+        </script>
 
 
 

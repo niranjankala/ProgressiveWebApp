@@ -1,5 +1,5 @@
 ﻿function jump() {
-    debugger;
+   
     localStorage.dn = localStorage.demo;
     $.ajax({
         url: 'https://betanodeapi.classlink.com/clouddrive/folder',
@@ -15,13 +15,18 @@
            // $('#classlink_parent_child').empty();
             $('#sidemenu').empty();
             for (var i = 0; i < result.response.length; i++) {
-                debugger;
+               
                 id = result.response[i].id;
-                result.response[i].filesfolder_name;
-                var append = '<a href="#' + result.response[i].id + '" id="' + result.response[i].id + '" onclick="childfolders(' + result.response[i].id + ')"><div class="col-lg-3 col-md-3 col-sm-6 col-xs-6"><div class="box box-default text-center google-drive"><div class="box-body"><h2 class="no-margin">' + result.response[i].filesfolder_name + '</h2><span class="icon-scope"><i><img style="max-width: 55px" src="../images/icon/folder.png" /></i> </span></div></div></div></a>';
+             
+                var append = '<a href="#parent" id="parent" onclick="childfolders(' + result.response[i].id + ')"><div class="col-lg-3 col-md-3 col-sm-6 col-xs-6"><div class="box box-default text-center google-drive"><div class="box-body"><h2 class="no-margin">' + result.response[i].filesfolder_name + '</h2><span class="icon-scope"><i><img style="max-width: 55px" src="../images/icon/folder.png" /></i> </span></div></div></div></a>';
                 $('#sidemenu').append(append);
 
             }
+            $('#backdiv').empty();
+            var append = '<a href="#" style="margin:1%;" id="parent" onclick="parentclick()" >Back </a>';
+            $('#backdiv').append(append);
+
+
         },
         failure: function (response) {
             alert('failure');
@@ -29,7 +34,7 @@
         error: function (error) {
 
             alert('error');
-            return false;
+          
             console.log('error', error);
 
         }
@@ -41,7 +46,7 @@
 function addElementToLi(result) {
     console.log(result);
     var prop;
-    debugger;
+    
     for (prop in result.services) {
         items = prop;
     
@@ -99,7 +104,7 @@ function myclick(e, f) {
 
 
     ////alert(e.firstElementChild.innerText);
-    //debugger;
+    //
     var ff = $(e).children("a").find(".collapsible-body")
     var id = '#' + f;
     $(f).css("display", "block");
@@ -119,7 +124,7 @@ function myclick(e, f) {
 ///////////////   not to be changed at any cost frustated  //////////////////////////
 function childfolders(result1) {
     //var count = result1.response.length;
-    debugger;
+
     var id = result1;
 
 
@@ -142,24 +147,47 @@ function childfolders(result1) {
         },
         contentType: 'application/x-www-form-urlencoded',
         success: function (result) {
-            debugger;
+            
             var id;
             var append1 = "";
             $('#sidemenu').empty();
-           // var mm = "#" + result1 + "_child";
-           // $(mm).empty();
+         
             for (var i = 0; i < result.response.length; i++) {
                 id = result.response[i].id;
                 result.response[i].filesfolder_name
-                var mm = "#sidemenu"; //"#" + result1 + "_child"
-                var append = '<a href="#' + result.response[i].id + '" id="' + result.response[i].id + '" ><div class="col-lg-3 col-md-3 col-sm-6 col-xs-6"><div class="box box-default text-center google-drive"><div class="box-body"><h2 class="no-margin">' + result.response[i].filesfolder_name + '</h2><span class="icon-scope"><i><img style="max-width: 55px" src="../images/icon/folder.png" /></i> </span></div></div></div></a>';
-                $('#sidemenu').append(append);
+                var mm = "#sidemenu";
+                result.response[i].filesfolder_name;
+                var foldername = result.response[i].filesfolder_name
+                if (result.response[i].filesfolder_name.length > 18) {
+                    foldername = foldername.substring(0, 15) + "...";
+                }
+     
 
-                //append1 = '<a href="#" class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span>' + result.response[i].filesfolder_name + '</a><div class="list-group collapse" id="' + result.response[i].id + '"></div>'
-                //$(mm).append(append1);
+
+                if (result.response[i].type == '0') {
+                    var append = '<a href="#' + result.response[i].id + '" id="' + result.response[i].id + '" onclick="childfolders(' + result.response[i].id + ')" ><div class="col-lg-3 col-md-3 col-sm-6 col-xs-6"><div class="box box-default text-center google-drive"><div class="box-body"><h2 class="no-margin">' + foldername + '</h2><span class="icon-scope"><i><img style="max-width: 55px" src="../images/icon/folder.png" /></i> </span></div></div></div></a>';
+                    $('#sidemenu').append(append);
+                }
+                if (result.response[i].type == '1')
+                {
+                    var append = '<a href="#' + result.response[i].id + '" id="' + result.response[i].id + '" onclick="childfolders(' + result.response[i].id + ')" ><div class="col-lg-3 col-md-3 col-sm-6 col-xs-6"><div class="box box-default text-center google-drive" style="background-color: #afb5bd;"><div class="box-body"><h2 class="no-margin">' + foldername + '</h2><span class="icon-scope"><i><img style="max-width: 55px" src="../images/icon/exeicon.png" /></i> </span></div></div></div></a>';
+                    $('#sidemenu').append(append);
+                }
+
             }
-
-
+         
+            if (result.meta.name == "My Classes" || result.meta.name == "My Documents" || result.meta.name == "My Shared") {
+                $('#backdiv').empty();
+                var append = ' <a href="#' + result1 + '" style="margin:1%;" onclick="jump()" >Back </a>';
+                $('#backdiv').append(append);
+            }
+            else {
+                $('#backdiv').empty();
+                var len = result.meta.ancestors.length - 1;
+                var name = result.meta.ancestors[len].id;
+                var append = ' <a href="#' + result1 + '" style="margin:1%;" onclick="childfolders(' + name + ')" >Back </a>';
+                $('#backdiv').append(append);
+            }
             console.log(result);
 
 

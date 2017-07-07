@@ -46,19 +46,27 @@ document.getElementById('btnlogin').addEventListener('click', function () {
                     },
                     contentType: 'application/json; charset=utf-8',
                     data: {
+                        
                         //Passing data
                         code: '' + $("#txtcode").val() + '',
                         username: '' + $("#txtname").val() + ''
                     },
 
                     success: function (result) {
-                        autherizeUser(result.UserDomainList[0].DN);
-                        console.log(result);
-
+                        debugger;
+                        if (result.ResultCode == 0) {
+                            var msgBox = new Windows.UI.Popups.MessageDialog(message);
+                            msgBox.showAsync();
+                        }
+                        else {
+                            autherizeUser(result.UserDomainList[0].DN);
+                            console.log(result);
+                        }
+                        $(".loader").fadeOut("slow");
 
                     },
                     error: function (error) {
-                    
+                        debugger;
                         console.log('error1', error);
                         $(".loader").fadeOut("slow");
                     }

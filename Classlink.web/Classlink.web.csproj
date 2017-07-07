@@ -286,6 +286,7 @@
     <Content Include="HTML\stylesheets\screen.css" />
     <Content Include="HTML\stylesheets\skin\_all-skins.min.css" />
     <Content Include="HTML\welcome-page.html" />
+    <Content Include="images\icon\exeicon.png" />
     <Content Include="images\icon\cloud.PNG" />
     <Content Include="images\icon\drop.PNG" />
     <Content Include="images\icon\folder.png" />
@@ -447,6 +448,8 @@
     <Content Include="fonts\websymbols-regular-webfont.eot" />
     <Content Include="fonts\websymbols-regular-webfont.ttf" />
     <Content Include="fonts\websymbols-regular-webfont.woff" />
+    <None Include="Properties\PublishProfiles\PWebApp - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\PWebApp - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\rahul.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
